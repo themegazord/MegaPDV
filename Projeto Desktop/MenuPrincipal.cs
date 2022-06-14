@@ -11,10 +11,17 @@ using System.Windows.Forms;
 namespace Projeto_Desktop
 {
     public partial class MenuPrincipal : Form
-    {
+    {   
+
         public MenuPrincipal()
         {
             InitializeComponent();
-        }        
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Usuarios u = new Usuarios();
+            u.ShowDialog();
+        }
     }
 }

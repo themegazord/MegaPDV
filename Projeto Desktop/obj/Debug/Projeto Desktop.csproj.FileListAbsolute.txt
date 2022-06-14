@@ -40,3 +40,5 @@ C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Pr
 C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto Desktop.pdb
 C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.DadosConexao.resources
 C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.TelaLogin.resources
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.MenuPrincipal.resources
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.Usuarios.resources

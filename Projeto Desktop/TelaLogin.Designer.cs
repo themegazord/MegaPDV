@@ -34,6 +34,7 @@
             this.tb_senha = new System.Windows.Forms.TextBox();
             this.btn_login = new System.Windows.Forms.Button();
             this.btn_sair = new System.Windows.Forms.Button();
+            this.btn_conexoes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -87,7 +88,7 @@
             // 
             // btn_login
             // 
-            this.btn_login.Location = new System.Drawing.Point(88, 182);
+            this.btn_login.Location = new System.Drawing.Point(43, 182);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(75, 23);
             this.btn_login.TabIndex = 4;
@@ -97,7 +98,7 @@
             // 
             // btn_sair
             // 
-            this.btn_sair.Location = new System.Drawing.Point(180, 182);
+            this.btn_sair.Location = new System.Drawing.Point(144, 182);
             this.btn_sair.Name = "btn_sair";
             this.btn_sair.Size = new System.Drawing.Size(75, 23);
             this.btn_sair.TabIndex = 5;
@@ -105,11 +106,22 @@
             this.btn_sair.UseVisualStyleBackColor = true;
             this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click);
             // 
+            // btn_conexoes
+            // 
+            this.btn_conexoes.Location = new System.Drawing.Point(246, 182);
+            this.btn_conexoes.Name = "btn_conexoes";
+            this.btn_conexoes.Size = new System.Drawing.Size(75, 23);
+            this.btn_conexoes.TabIndex = 6;
+            this.btn_conexoes.Text = "Conexões";
+            this.btn_conexoes.UseVisualStyleBackColor = true;
+            this.btn_conexoes.Click += new System.EventHandler(this.btn_conexoes_Click);
+            // 
             // TelaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(360, 247);
+            this.Controls.Add(this.btn_conexoes);
             this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.tb_senha);
@@ -119,6 +131,7 @@
             this.Name = "TelaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaLogin";
+            this.Load += new System.EventHandler(this.TelaLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,5 +145,6 @@
         private System.Windows.Forms.TextBox tb_senha;
         private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.Button btn_sair;
+        private System.Windows.Forms.Button btn_conexoes;
     }
 }
