@@ -1,0 +1,42 @@
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\Projeto Desktop.exe.config
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\Projeto Desktop.exe
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\Projeto Desktop.pdb
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\Npgsql.dll
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Buffers.dll
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Collections.Immutable.dll
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Memory.dll
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Text.Json.dll
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Threading.Channels.dll
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.ValueTuple.dll
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\Npgsql.xml
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Buffers.xml
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Collections.Immutable.xml
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Memory.xml
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Text.Json.xml
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Threading.Channels.xml
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\System.ValueTuple.xml
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto Desktop.csproj.AssemblyReference.cache
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto Desktop.csproj.SuggestedBindingRedirects.cache
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.Frm_Conexoes.resources
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.Properties.Resources.resources
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto Desktop.csproj.GenerateResource.cache
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto Desktop.csproj.CoreCompileInputs.cache
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto Desktop.csproj.CopyComplete
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto Desktop.exe
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto Desktop.pdb
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.DadosConexao.resources
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.TelaLogin.resources
