@@ -184,6 +184,7 @@
             this.Name = "Usuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manutenção de Usuários";
+            this.Load += new System.EventHandler(this.Usuarios_Load);
             gb_ativo.ResumeLayout(false);
             gb_ativo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_usuarios)).EndInit();
