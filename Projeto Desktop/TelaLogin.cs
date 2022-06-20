@@ -54,7 +54,7 @@ namespace Projeto_Desktop
             }
 
             string sql = $"SELECT * FROM cadusu WHERE nomusu = '{usuario}' and senusu = '{senha}'";
-            dt = Banco.select(sql);
+            dt = Connection.select(sql);
 
             if (dt.Rows.Count == 1)
             {
