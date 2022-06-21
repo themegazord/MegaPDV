@@ -93,6 +93,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CLCripto.cs" />
+    <Compile Include="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConexaoAtiva.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="ConvertReader.cs" />
@@ -109,6 +115,12 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="IniFile.cs" />
+    <Compile Include="ManipulaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManipulaCliente.Designer.cs">
+      <DependentUpon>ManipulaCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManipulaUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,11 +147,17 @@
     <Compile Include="Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DadosConexao.resx">
       <DependentUpon>DadosConexao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManipulaCliente.resx">
+      <DependentUpon>ManipulaCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManipulaUsuario.resx">
       <DependentUpon>ManipulaUsuario.cs</DependentUpon>

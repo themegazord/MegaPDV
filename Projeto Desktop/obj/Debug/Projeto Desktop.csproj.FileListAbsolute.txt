@@ -43,3 +43,5 @@ C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Pr
 C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.MenuPrincipal.resources
 C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.Usuarios.resources
 C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.ManipulaUsuario.resources
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.Clientes.resources
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.ManipulaCliente.resources

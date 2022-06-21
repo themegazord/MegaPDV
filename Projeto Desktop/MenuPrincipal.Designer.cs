@@ -30,20 +30,20 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.msi_sistema = new System.Windows.Forms.ToolStripMenuItem();
-            this.msi_cadastro = new System.Windows.Forms.ToolStripMenuItem();
-            this.msi_estoque = new System.Windows.Forms.ToolStripMenuItem();
-            this.msi_financeiro = new System.Windows.Forms.ToolStripMenuItem();
-            this.msi_pedven = new System.Windows.Forms.ToolStripMenuItem();
-            this.msi_caixa = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.privilégiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msi_cadastro = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fornecedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.privilégiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msi_estoque = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroDeProdutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estoqueToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.entradaDeProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msi_financeiro = new System.Windows.Forms.ToolStripMenuItem();
             this.contasAPagarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contasAReceberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msi_pedven = new System.Windows.Forms.ToolStripMenuItem();
+            this.msi_caixa = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,6 +71,19 @@
             this.msi_sistema.Size = new System.Drawing.Size(60, 20);
             this.msi_sistema.Text = "Sistema";
             // 
+            // usuariosToolStripMenuItem
+            // 
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
+            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
+            // 
+            // privilégiosToolStripMenuItem
+            // 
+            this.privilégiosToolStripMenuItem.Name = "privilégiosToolStripMenuItem";
+            this.privilégiosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.privilégiosToolStripMenuItem.Text = "Privilégios";
+            // 
             // msi_cadastro
             // 
             this.msi_cadastro.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -79,6 +92,19 @@
             this.msi_cadastro.Name = "msi_cadastro";
             this.msi_cadastro.Size = new System.Drawing.Size(66, 20);
             this.msi_cadastro.Text = "Cadastro";
+            // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
+            // 
+            // fornecedorToolStripMenuItem
+            // 
+            this.fornecedorToolStripMenuItem.Name = "fornecedorToolStripMenuItem";
+            this.fornecedorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fornecedorToolStripMenuItem.Text = "Fornecedor";
             // 
             // msi_estoque
             // 
@@ -89,52 +115,6 @@
             this.msi_estoque.Name = "msi_estoque";
             this.msi_estoque.Size = new System.Drawing.Size(61, 20);
             this.msi_estoque.Text = "Estoque";
-            // 
-            // msi_financeiro
-            // 
-            this.msi_financeiro.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.contasAPagarToolStripMenuItem,
-            this.contasAReceberToolStripMenuItem});
-            this.msi_financeiro.Name = "msi_financeiro";
-            this.msi_financeiro.Size = new System.Drawing.Size(74, 20);
-            this.msi_financeiro.Text = "Financeiro";
-            // 
-            // msi_pedven
-            // 
-            this.msi_pedven.Name = "msi_pedven";
-            this.msi_pedven.Size = new System.Drawing.Size(107, 20);
-            this.msi_pedven.Text = "Pedido de Venda";
-            // 
-            // msi_caixa
-            // 
-            this.msi_caixa.Name = "msi_caixa";
-            this.msi_caixa.Size = new System.Drawing.Size(48, 20);
-            this.msi_caixa.Text = "Caixa";
-            // 
-            // usuariosToolStripMenuItem
-            // 
-            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.usuariosToolStripMenuItem.Text = "Usuarios";
-            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
-            // 
-            // clientesToolStripMenuItem
-            // 
-            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.clientesToolStripMenuItem.Text = "Clientes";
-            // 
-            // fornecedorToolStripMenuItem
-            // 
-            this.fornecedorToolStripMenuItem.Name = "fornecedorToolStripMenuItem";
-            this.fornecedorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.fornecedorToolStripMenuItem.Text = "Fornecedor";
-            // 
-            // privilégiosToolStripMenuItem
-            // 
-            this.privilégiosToolStripMenuItem.Name = "privilégiosToolStripMenuItem";
-            this.privilégiosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.privilégiosToolStripMenuItem.Text = "Privilégios";
             // 
             // cadastroDeProdutoToolStripMenuItem
             // 
@@ -154,17 +134,38 @@
             this.entradaDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.entradaDeProdutosToolStripMenuItem.Text = "Entrada de Produtos";
             // 
+            // msi_financeiro
+            // 
+            this.msi_financeiro.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.contasAPagarToolStripMenuItem,
+            this.contasAReceberToolStripMenuItem});
+            this.msi_financeiro.Name = "msi_financeiro";
+            this.msi_financeiro.Size = new System.Drawing.Size(74, 20);
+            this.msi_financeiro.Text = "Financeiro";
+            // 
             // contasAPagarToolStripMenuItem
             // 
             this.contasAPagarToolStripMenuItem.Name = "contasAPagarToolStripMenuItem";
-            this.contasAPagarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.contasAPagarToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.contasAPagarToolStripMenuItem.Text = "Contas a Pagar";
             // 
             // contasAReceberToolStripMenuItem
             // 
             this.contasAReceberToolStripMenuItem.Name = "contasAReceberToolStripMenuItem";
-            this.contasAReceberToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.contasAReceberToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.contasAReceberToolStripMenuItem.Text = "Contas a Receber";
+            // 
+            // msi_pedven
+            // 
+            this.msi_pedven.Name = "msi_pedven";
+            this.msi_pedven.Size = new System.Drawing.Size(107, 20);
+            this.msi_pedven.Text = "Pedido de Venda";
+            // 
+            // msi_caixa
+            // 
+            this.msi_caixa.Name = "msi_caixa";
+            this.msi_caixa.Size = new System.Drawing.Size(48, 20);
+            this.msi_caixa.Text = "Caixa";
             // 
             // MenuPrincipal
             // 

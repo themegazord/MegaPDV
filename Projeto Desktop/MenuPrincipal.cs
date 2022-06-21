@@ -23,5 +23,11 @@ namespace Projeto_Desktop
             Usuarios u = new Usuarios();
             u.ShowDialog();
         }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Clientes c = new Clientes();
+            c.ShowDialog();
+        }
     }
 }
