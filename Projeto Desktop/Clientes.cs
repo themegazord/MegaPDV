@@ -1,4 +1,5 @@
 ﻿using System;
+using Projeto_Desktop.Rel;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,11 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp;
+using System.IO;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 
 namespace Projeto_Desktop
 {
     public partial class Clientes : Form
     {
+        string caminhoProj = $@"C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Relatórios";
         public Clientes()
         {
             InitializeComponent();
@@ -23,7 +29,7 @@ namespace Projeto_Desktop
             string codcli = tb_codigo_cliente.Text;
             string pesquisa = tb_pesquisa.Text;
             string codven = tb_cod_vendedor.Text;
-            StringBuilder sql = new StringBuilder($@"select cod_cliente as ""Código"", nomcliente as ""Nome do Cliente"", nomsocialcliente as ""Nome Social"", cpf_cliente as ""CPF"", cnpjcliente as ""cnpjcliente"", endereco_cliente as ""Endereço"", telefone1 as ""Telefone Fixo"", telefone2 as ""Telefone Celular"", telefone3 as ""Telefone de Contato"", codvendedor as ""Código do Vendedor"" from cadcli");
+            StringBuilder sql = new StringBuilder($@"select cod_cliente as ""Código"", nomcliente as ""Nome do Cliente"", nomsocialcliente as ""Nome Social"", cpf_cliente as ""CPF"", cnpjcliente as ""CNPJ"", endereco_cliente as ""Endereço"", telefone1 as ""Telefone Fixo"", telefone2 as ""Telefone Celular"", telefone3 as ""Telefone de Contato"", codvendedor as ""Código do Vendedor"" from cadcli");
             string AndWhere = " where ";
             if (tb_codigo_cliente.Text != "")
             {
@@ -88,6 +94,7 @@ namespace Projeto_Desktop
         {
             this.Hide();
             ManipulaCliente mc = new ManipulaCliente();
+            mc.FormClosed += (s, args) => this.Atualizar_Dgv();
             mc.FormClosed += (s, args) => this.Show();
             mc.Text = "Cadastro de Clientes";
             mc.ShowDialog();
@@ -95,14 +102,51 @@ namespace Projeto_Desktop
 
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            try
+            {
+                this.Hide();
+                string id = dgv_clientes.SelectedRows[0].Cells[0].Value.ToString();
+                ManipulaCliente mc = new ManipulaCliente(id);
+                mc.FormClosed += (s, args) => this.Show();
+                mc.FormClosed += (s, args) => this.Atualizar_Dgv();
+                mc.Text = "Atualização de Clientes";
+                mc.ShowDialog();
+            } catch (Exception ex)
+            {
+                MessageBox.Show("Selecione um usuário válido", "Erro");
+                return;
+            }
 
-            this.Hide();
-            ManipulaCliente mc = new ManipulaCliente();
         }
 
         private void btn_pesquisar_Click(object sender, EventArgs e)
         {
             Atualizar_Dgv();
+        }
+
+        private void excluirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string id = dgv_clientes.SelectedRows[0].Cells[0].Value.ToString();
+                string sql = $@"delete from cadcli where cod_cliente = {id}";
+                Connection.delete(sql);
+                Atualizar_Dgv();
+                MessageBox.Show("Cliente excluido com sucesso!!!", "Sucesso");
+            } catch (Exception ex)
+            {
+                MessageBox.Show("Selecione um usuário válido", "Erro");
+                return;
+            }
+
+        }
+
+        private void imprimirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using(var frm = new Rel.RelacaoClientes())
+            {
+                frm.ShowDialog();
+            }
         }
     }
 }

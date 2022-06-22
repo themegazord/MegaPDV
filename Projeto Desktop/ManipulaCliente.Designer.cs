@@ -78,7 +78,9 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_atualizar = new System.Windows.Forms.Button();
+            this.lb_mostra_id = new System.Windows.Forms.Label();
+            this.lb_id = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -542,22 +544,41 @@
             this.label19.TabIndex = 27;
             this.label19.Text = "*";
             // 
-            // button1
+            // btn_atualizar
             // 
-            this.button1.Location = new System.Drawing.Point(598, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 52);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Atualizar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_atualizar.Location = new System.Drawing.Point(598, 12);
+            this.btn_atualizar.Name = "btn_atualizar";
+            this.btn_atualizar.Size = new System.Drawing.Size(80, 52);
+            this.btn_atualizar.TabIndex = 28;
+            this.btn_atualizar.Text = "Atualizar";
+            this.btn_atualizar.UseVisualStyleBackColor = true;
+            this.btn_atualizar.Click += new System.EventHandler(this.btn_atualizar_Click);
+            // 
+            // lb_mostra_id
+            // 
+            this.lb_mostra_id.AutoSize = true;
+            this.lb_mostra_id.Location = new System.Drawing.Point(511, 15);
+            this.lb_mostra_id.Name = "lb_mostra_id";
+            this.lb_mostra_id.Size = new System.Drawing.Size(21, 13);
+            this.lb_mostra_id.TabIndex = 29;
+            this.lb_mostra_id.Text = "ID:";
+            // 
+            // lb_id
+            // 
+            this.lb_id.AutoSize = true;
+            this.lb_id.Location = new System.Drawing.Point(538, 15);
+            this.lb_id.Name = "lb_id";
+            this.lb_id.Size = new System.Drawing.Size(0, 13);
+            this.lb_id.TabIndex = 30;
             // 
             // ManipulaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(690, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lb_id);
+            this.Controls.Add(this.lb_mostra_id);
+            this.Controls.Add(this.btn_atualizar);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
@@ -649,6 +670,8 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_atualizar;
+        private System.Windows.Forms.Label lb_mostra_id;
+        private System.Windows.Forms.Label lb_id;
     }
 }

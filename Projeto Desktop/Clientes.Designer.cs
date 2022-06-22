@@ -46,13 +46,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rb_ativo = new System.Windows.Forms.RadioButton();
-            this.rb_inativo = new System.Windows.Forms.RadioButton();
             this.rb_todos = new System.Windows.Forms.RadioButton();
+            this.rb_inativo = new System.Windows.Forms.RadioButton();
+            this.rb_ativo = new System.Windows.Forms.RadioButton();
             this.btn_pesquisar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.cb_pf = new System.Windows.Forms.CheckBox();
             this.cb_pj = new System.Windows.Forms.CheckBox();
+            this.cb_pf = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_clientes)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -65,6 +65,7 @@
             this.dgv_clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_clientes.Location = new System.Drawing.Point(12, 143);
             this.dgv_clientes.Name = "dgv_clientes";
+            this.dgv_clientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_clientes.Size = new System.Drawing.Size(736, 306);
             this.dgv_clientes.TabIndex = 0;
             // 
@@ -109,12 +110,14 @@
             this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
             this.excluirToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.excluirToolStripMenuItem.Text = "Excluir";
+            this.excluirToolStripMenuItem.Click += new System.EventHandler(this.excluirToolStripMenuItem_Click);
             // 
             // imprimirToolStripMenuItem
             // 
             this.imprimirToolStripMenuItem.Name = "imprimirToolStripMenuItem";
             this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.imprimirToolStripMenuItem.Text = "Imprimir";
+            this.imprimirToolStripMenuItem.Click += new System.EventHandler(this.imprimirToolStripMenuItem_Click);
             // 
             // label2
             // 
@@ -219,16 +222,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ativo ?";
             // 
-            // rb_ativo
+            // rb_todos
             // 
-            this.rb_ativo.AutoSize = true;
-            this.rb_ativo.Location = new System.Drawing.Point(4, 19);
-            this.rb_ativo.Name = "rb_ativo";
-            this.rb_ativo.Size = new System.Drawing.Size(49, 17);
-            this.rb_ativo.TabIndex = 5;
-            this.rb_ativo.TabStop = true;
-            this.rb_ativo.Text = "Ativo";
-            this.rb_ativo.UseVisualStyleBackColor = true;
+            this.rb_todos.AutoSize = true;
+            this.rb_todos.Location = new System.Drawing.Point(118, 19);
+            this.rb_todos.Name = "rb_todos";
+            this.rb_todos.Size = new System.Drawing.Size(55, 17);
+            this.rb_todos.TabIndex = 14;
+            this.rb_todos.TabStop = true;
+            this.rb_todos.Text = "Todos";
+            this.rb_todos.UseVisualStyleBackColor = true;
             // 
             // rb_inativo
             // 
@@ -241,16 +244,16 @@
             this.rb_inativo.Text = "Inativo";
             this.rb_inativo.UseVisualStyleBackColor = true;
             // 
-            // rb_todos
+            // rb_ativo
             // 
-            this.rb_todos.AutoSize = true;
-            this.rb_todos.Location = new System.Drawing.Point(118, 19);
-            this.rb_todos.Name = "rb_todos";
-            this.rb_todos.Size = new System.Drawing.Size(55, 17);
-            this.rb_todos.TabIndex = 14;
-            this.rb_todos.TabStop = true;
-            this.rb_todos.Text = "Todos";
-            this.rb_todos.UseVisualStyleBackColor = true;
+            this.rb_ativo.AutoSize = true;
+            this.rb_ativo.Location = new System.Drawing.Point(4, 19);
+            this.rb_ativo.Name = "rb_ativo";
+            this.rb_ativo.Size = new System.Drawing.Size(49, 17);
+            this.rb_ativo.TabIndex = 5;
+            this.rb_ativo.TabStop = true;
+            this.rb_ativo.Text = "Ativo";
+            this.rb_ativo.UseVisualStyleBackColor = true;
             // 
             // btn_pesquisar
             // 
@@ -273,16 +276,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "PF / PJ";
             // 
-            // cb_pf
-            // 
-            this.cb_pf.AutoSize = true;
-            this.cb_pf.Location = new System.Drawing.Point(6, 18);
-            this.cb_pf.Name = "cb_pf";
-            this.cb_pf.Size = new System.Drawing.Size(91, 17);
-            this.cb_pf.TabIndex = 17;
-            this.cb_pf.Text = "Pessoa Fisica";
-            this.cb_pf.UseVisualStyleBackColor = true;
-            // 
             // cb_pj
             // 
             this.cb_pj.AutoSize = true;
@@ -292,6 +285,16 @@
             this.cb_pj.TabIndex = 18;
             this.cb_pj.Text = "Pessoa Juridica";
             this.cb_pj.UseVisualStyleBackColor = true;
+            // 
+            // cb_pf
+            // 
+            this.cb_pf.AutoSize = true;
+            this.cb_pf.Location = new System.Drawing.Point(6, 18);
+            this.cb_pf.Name = "cb_pf";
+            this.cb_pf.Size = new System.Drawing.Size(91, 17);
+            this.cb_pf.TabIndex = 17;
+            this.cb_pf.Text = "Pessoa Fisica";
+            this.cb_pf.UseVisualStyleBackColor = true;
             // 
             // Clientes
             // 
