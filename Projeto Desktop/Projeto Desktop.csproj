@@ -116,6 +116,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cidades.Designer.cs">
+      <DependentUpon>Cidades.cs</DependentUpon>
+    </Compile>
     <Compile Include="CLCripto.cs" />
     <Compile Include="Clientes.cs">
       <SubType>Form</SubType>
@@ -137,6 +143,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Estados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estados.Designer.cs">
+      <DependentUpon>Estados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +162,12 @@
       <DependentUpon>Fornecedor.cs</DependentUpon>
     </Compile>
     <Compile Include="IniFile.cs" />
+    <Compile Include="ManipulaCidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManipulaCidades.Designer.cs">
+      <DependentUpon>ManipulaCidades.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManipulaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +191,12 @@
     </Compile>
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pais.Designer.cs">
+      <DependentUpon>Pais.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -200,17 +224,26 @@
     <Compile Include="Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Cidades.resx">
+      <DependentUpon>Cidades.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DadosConexao.resx">
       <DependentUpon>DadosConexao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Estados.resx">
+      <DependentUpon>Estados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fornecedor.resx">
       <DependentUpon>Fornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManipulaCidades.resx">
+      <DependentUpon>ManipulaCidades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManipulaCliente.resx">
       <DependentUpon>ManipulaCliente.cs</DependentUpon>
@@ -223,6 +256,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pais.resx">
+      <DependentUpon>Pais.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

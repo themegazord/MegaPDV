@@ -35,5 +35,26 @@ namespace Projeto_Desktop
             Fornecedor f = new Fornecedor();
             f.ShowDialog();
         }
+
+        private void paisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Pais pa = new Pais();
+            pa.AtualizaDGV();
+            pa.ShowDialog();
+        }
+
+        private void estadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Estados es = new Estados();
+            es.AtualizaDGV();
+            es.ShowDialog();
+        }
+
+        private void cidadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cidades c = new Cidades();
+            c.AtualizaDGV();
+            c.ShowDialog();
+        }
     }
 }

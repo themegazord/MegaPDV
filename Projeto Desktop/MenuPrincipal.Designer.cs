@@ -44,6 +44,9 @@
             this.contasAReceberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msi_pedven = new System.Windows.Forms.ToolStripMenuItem();
             this.msi_caixa = new System.Windows.Forms.ToolStripMenuItem();
+            this.paisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,21 +77,24 @@
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // privilégiosToolStripMenuItem
             // 
             this.privilégiosToolStripMenuItem.Name = "privilégiosToolStripMenuItem";
-            this.privilégiosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.privilégiosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.privilégiosToolStripMenuItem.Text = "Privilégios";
             // 
             // msi_cadastro
             // 
             this.msi_cadastro.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientesToolStripMenuItem,
-            this.fornecedorToolStripMenuItem});
+            this.fornecedorToolStripMenuItem,
+            this.paisToolStripMenuItem,
+            this.estadosToolStripMenuItem,
+            this.cidadesToolStripMenuItem});
             this.msi_cadastro.Name = "msi_cadastro";
             this.msi_cadastro.Size = new System.Drawing.Size(66, 20);
             this.msi_cadastro.Text = "Cadastro";
@@ -168,6 +174,27 @@
             this.msi_caixa.Size = new System.Drawing.Size(48, 20);
             this.msi_caixa.Text = "Caixa";
             // 
+            // paisToolStripMenuItem
+            // 
+            this.paisToolStripMenuItem.Name = "paisToolStripMenuItem";
+            this.paisToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.paisToolStripMenuItem.Text = "Pais";
+            this.paisToolStripMenuItem.Click += new System.EventHandler(this.paisToolStripMenuItem_Click);
+            // 
+            // estadosToolStripMenuItem
+            // 
+            this.estadosToolStripMenuItem.Name = "estadosToolStripMenuItem";
+            this.estadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.estadosToolStripMenuItem.Text = "Estados";
+            this.estadosToolStripMenuItem.Click += new System.EventHandler(this.estadosToolStripMenuItem_Click);
+            // 
+            // cidadesToolStripMenuItem
+            // 
+            this.cidadesToolStripMenuItem.Name = "cidadesToolStripMenuItem";
+            this.cidadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cidadesToolStripMenuItem.Text = "Cidades";
+            this.cidadesToolStripMenuItem.Click += new System.EventHandler(this.cidadesToolStripMenuItem_Click);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,5 +230,8 @@
         private System.Windows.Forms.ToolStripMenuItem contasAReceberToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem msi_pedven;
         private System.Windows.Forms.ToolStripMenuItem msi_caixa;
+        private System.Windows.Forms.ToolStripMenuItem paisToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cidadesToolStripMenuItem;
     }
 }

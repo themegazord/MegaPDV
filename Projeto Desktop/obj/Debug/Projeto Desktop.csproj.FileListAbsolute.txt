@@ -100,3 +100,7 @@ C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\zh
 C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.Fornecedor.resources
 C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.ManipulaFornecedor.resources
 C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.Rel.RelacaoFornecedor.resources
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.Pais.resources
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.Estados.resources
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.Cidades.resources
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.ManipulaCidades.resources
