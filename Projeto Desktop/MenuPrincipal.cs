@@ -29,5 +29,11 @@ namespace Projeto_Desktop
             Clientes c = new Clientes();
             c.ShowDialog();
         }
+
+        private void fornecedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Fornecedor f = new Fornecedor();
+            f.ShowDialog();
+        }
     }
 }

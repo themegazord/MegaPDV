@@ -35,6 +35,22 @@ namespace Projeto_Desktop
             {
                 sql.Append($@"{AndWhere}cod_cliente = {tb_codigo_cliente}");
                 AndWhere = " and ";
+
+                if (rb_ativo.Checked)
+                {
+                    sql.Append($@"{AndWhere}status_cliente = 'A'");
+                    AndWhere = " and ";
+                }
+                else if (rb_inativo.Checked)
+                {
+                    sql.Append($@"{AndWhere}status_cliente = 'I'");
+                    AndWhere = " and ";
+                }
+                else if (rb_todos.Checked)
+                {
+                    sql.Append($@"{AndWhere}status_cliente in ('A', 'I')");
+                    AndWhere = " and ";
+                }
             } else
             {   
                 if (cb_alvo.SelectedIndex == 0)
@@ -62,7 +78,7 @@ namespace Projeto_Desktop
                 {
                     sql.Append($@"{AndWhere}status_cliente = 'A'");
                     AndWhere = " and ";
-                } else if (rb_ativo.Checked)
+                } else if (rb_inativo.Checked)
                 {
                     sql.Append($@"{AndWhere}status_cliente = 'I'");
                     AndWhere = " and ";

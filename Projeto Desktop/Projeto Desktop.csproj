@@ -143,12 +143,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedor.Designer.cs">
+      <DependentUpon>Fornecedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="IniFile.cs" />
     <Compile Include="ManipulaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ManipulaCliente.Designer.cs">
       <DependentUpon>ManipulaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManipulaFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManipulaFornecedor.Designer.cs">
+      <DependentUpon>ManipulaFornecedor.cs</DependentUpon>
     </Compile>
     <Compile Include="ManipulaUsuario.cs">
       <SubType>Form</SubType>
@@ -169,6 +181,12 @@
     </Compile>
     <Compile Include="Rel\RelacaoClientes.Designer.cs">
       <DependentUpon>RelacaoClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rel\RelacaoFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rel\RelacaoFornecedor.Designer.cs">
+      <DependentUpon>RelacaoFornecedor.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaLogin.cs">
       <SubType>Form</SubType>
@@ -191,8 +209,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedor.resx">
+      <DependentUpon>Fornecedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManipulaCliente.resx">
       <DependentUpon>ManipulaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManipulaFornecedor.resx">
+      <DependentUpon>ManipulaFornecedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManipulaUsuario.resx">
       <DependentUpon>ManipulaUsuario.cs</DependentUpon>
@@ -209,9 +233,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RelacaoClientes.rdlc" />
+    <EmbeddedResource Include="Rel\RelacaoClientes.rdlc" />
     <EmbeddedResource Include="Rel\RelacaoClientes.resx">
       <DependentUpon>RelacaoClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rel\RelacaoFornecedor.rdlc" />
+    <EmbeddedResource Include="Rel\RelacaoFornecedor.resx">
+      <DependentUpon>RelacaoFornecedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>

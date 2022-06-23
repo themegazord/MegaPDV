@@ -1741,13 +1741,13 @@ namespace Projeto_Desktop {
             
             private global::System.Data.DataColumn columncodfor;
             
-            private global::System.Data.DataColumn columnnomfornecedor;
+            private global::System.Data.DataColumn columnrazaosocialfor;
             
             private global::System.Data.DataColumn columncnpj_fornecedor;
             
-            private global::System.Data.DataColumn columntelefone_fornecedor;
+            private global::System.Data.DataColumn columntelefone1;
             
-            private global::System.Data.DataColumn columncelular_fornecedor;
+            private global::System.Data.DataColumn columntelefone2;
             
             private global::System.Data.DataColumn columnendereco_fornecedor;
             
@@ -1761,7 +1761,19 @@ namespace Projeto_Desktop {
             
             private global::System.Data.DataColumn columnemail_fornecedor;
             
-            private global::System.Data.DataColumn columncod_tipfor;
+            private global::System.Data.DataColumn columncodcidade;
+            
+            private global::System.Data.DataColumn columnnomefantasia_fornecedor;
+            
+            private global::System.Data.DataColumn columnie_fornecedor;
+            
+            private global::System.Data.DataColumn columnim_fornecedor;
+            
+            private global::System.Data.DataColumn columnnomecontato_fornecedor;
+            
+            private global::System.Data.DataColumn columntelefone3;
+            
+            private global::System.Data.DataColumn columnativo;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -1806,9 +1818,9 @@ namespace Projeto_Desktop {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn nomfornecedorColumn {
+            public global::System.Data.DataColumn razaosocialforColumn {
                 get {
-                    return this.columnnomfornecedor;
+                    return this.columnrazaosocialfor;
                 }
             }
             
@@ -1822,17 +1834,17 @@ namespace Projeto_Desktop {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn telefone_fornecedorColumn {
+            public global::System.Data.DataColumn telefone1Column {
                 get {
-                    return this.columntelefone_fornecedor;
+                    return this.columntelefone1;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn celular_fornecedorColumn {
+            public global::System.Data.DataColumn telefone2Column {
                 get {
-                    return this.columncelular_fornecedor;
+                    return this.columntelefone2;
                 }
             }
             
@@ -1886,9 +1898,57 @@ namespace Projeto_Desktop {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn cod_tipforColumn {
+            public global::System.Data.DataColumn codcidadeColumn {
                 get {
-                    return this.columncod_tipfor;
+                    return this.columncodcidade;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn nomefantasia_fornecedorColumn {
+                get {
+                    return this.columnnomefantasia_fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ie_fornecedorColumn {
+                get {
+                    return this.columnie_fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn im_fornecedorColumn {
+                get {
+                    return this.columnim_fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn nomecontato_fornecedorColumn {
+                get {
+                    return this.columnnomecontato_fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn telefone3Column {
+                get {
+                    return this.columntelefone3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ativoColumn {
+                get {
+                    return this.columnativo;
                 }
             }
             
@@ -1929,21 +1989,44 @@ namespace Projeto_Desktop {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public cadforRow AddcadforRow(string nomfornecedor, string cnpj_fornecedor, string telefone_fornecedor, string celular_fornecedor, string endereco_fornecedor, string numero_fornecedor, string complemento_fornecedor, string bairro_fornecedor, string cep_fornecedor, string email_fornecedor, string cod_tipfor) {
+            public cadforRow AddcadforRow(
+                        string razaosocialfor, 
+                        string cnpj_fornecedor, 
+                        string telefone1, 
+                        string telefone2, 
+                        string endereco_fornecedor, 
+                        string numero_fornecedor, 
+                        string complemento_fornecedor, 
+                        string bairro_fornecedor, 
+                        string cep_fornecedor, 
+                        string email_fornecedor, 
+                        string codcidade, 
+                        string nomefantasia_fornecedor, 
+                        string ie_fornecedor, 
+                        string im_fornecedor, 
+                        string nomecontato_fornecedor, 
+                        string telefone3, 
+                        string ativo) {
                 cadforRow rowcadforRow = ((cadforRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        nomfornecedor,
+                        razaosocialfor,
                         cnpj_fornecedor,
-                        telefone_fornecedor,
-                        celular_fornecedor,
+                        telefone1,
+                        telefone2,
                         endereco_fornecedor,
                         numero_fornecedor,
                         complemento_fornecedor,
                         bairro_fornecedor,
                         cep_fornecedor,
                         email_fornecedor,
-                        cod_tipfor};
+                        codcidade,
+                        nomefantasia_fornecedor,
+                        ie_fornecedor,
+                        im_fornecedor,
+                        nomecontato_fornecedor,
+                        telefone3,
+                        ativo};
                 rowcadforRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowcadforRow);
                 return rowcadforRow;
@@ -1974,17 +2057,23 @@ namespace Projeto_Desktop {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
                 this.columncodfor = base.Columns["codfor"];
-                this.columnnomfornecedor = base.Columns["nomfornecedor"];
+                this.columnrazaosocialfor = base.Columns["razaosocialfor"];
                 this.columncnpj_fornecedor = base.Columns["cnpj_fornecedor"];
-                this.columntelefone_fornecedor = base.Columns["telefone_fornecedor"];
-                this.columncelular_fornecedor = base.Columns["celular_fornecedor"];
+                this.columntelefone1 = base.Columns["telefone1"];
+                this.columntelefone2 = base.Columns["telefone2"];
                 this.columnendereco_fornecedor = base.Columns["endereco_fornecedor"];
                 this.columnnumero_fornecedor = base.Columns["numero_fornecedor"];
                 this.columncomplemento_fornecedor = base.Columns["complemento_fornecedor"];
                 this.columnbairro_fornecedor = base.Columns["bairro_fornecedor"];
                 this.columncep_fornecedor = base.Columns["cep_fornecedor"];
                 this.columnemail_fornecedor = base.Columns["email_fornecedor"];
-                this.columncod_tipfor = base.Columns["cod_tipfor"];
+                this.columncodcidade = base.Columns["codcidade"];
+                this.columnnomefantasia_fornecedor = base.Columns["nomefantasia_fornecedor"];
+                this.columnie_fornecedor = base.Columns["ie_fornecedor"];
+                this.columnim_fornecedor = base.Columns["im_fornecedor"];
+                this.columnnomecontato_fornecedor = base.Columns["nomecontato_fornecedor"];
+                this.columntelefone3 = base.Columns["telefone3"];
+                this.columnativo = base.Columns["ativo"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1992,14 +2081,14 @@ namespace Projeto_Desktop {
             private void InitClass() {
                 this.columncodfor = new global::System.Data.DataColumn("codfor", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncodfor);
-                this.columnnomfornecedor = new global::System.Data.DataColumn("nomfornecedor", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnnomfornecedor);
+                this.columnrazaosocialfor = new global::System.Data.DataColumn("razaosocialfor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnrazaosocialfor);
                 this.columncnpj_fornecedor = new global::System.Data.DataColumn("cnpj_fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncnpj_fornecedor);
-                this.columntelefone_fornecedor = new global::System.Data.DataColumn("telefone_fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntelefone_fornecedor);
-                this.columncelular_fornecedor = new global::System.Data.DataColumn("celular_fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncelular_fornecedor);
+                this.columntelefone1 = new global::System.Data.DataColumn("telefone1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntelefone1);
+                this.columntelefone2 = new global::System.Data.DataColumn("telefone2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntelefone2);
                 this.columnendereco_fornecedor = new global::System.Data.DataColumn("endereco_fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnendereco_fornecedor);
                 this.columnnumero_fornecedor = new global::System.Data.DataColumn("numero_fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
@@ -2012,8 +2101,20 @@ namespace Projeto_Desktop {
                 base.Columns.Add(this.columncep_fornecedor);
                 this.columnemail_fornecedor = new global::System.Data.DataColumn("email_fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnemail_fornecedor);
-                this.columncod_tipfor = new global::System.Data.DataColumn("cod_tipfor", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncod_tipfor);
+                this.columncodcidade = new global::System.Data.DataColumn("codcidade", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncodcidade);
+                this.columnnomefantasia_fornecedor = new global::System.Data.DataColumn("nomefantasia_fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnnomefantasia_fornecedor);
+                this.columnie_fornecedor = new global::System.Data.DataColumn("ie_fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnie_fornecedor);
+                this.columnim_fornecedor = new global::System.Data.DataColumn("im_fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnim_fornecedor);
+                this.columnnomecontato_fornecedor = new global::System.Data.DataColumn("nomecontato_fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnnomecontato_fornecedor);
+                this.columntelefone3 = new global::System.Data.DataColumn("telefone3", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntelefone3);
+                this.columnativo = new global::System.Data.DataColumn("ativo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnativo);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columncodfor}, true));
                 this.columncodfor.AutoIncrement = true;
@@ -2021,17 +2122,23 @@ namespace Projeto_Desktop {
                 this.columncodfor.AutoIncrementStep = -1;
                 this.columncodfor.AllowDBNull = false;
                 this.columncodfor.Unique = true;
-                this.columnnomfornecedor.MaxLength = 255;
+                this.columnrazaosocialfor.MaxLength = 255;
                 this.columncnpj_fornecedor.MaxLength = 40;
-                this.columntelefone_fornecedor.MaxLength = 40;
-                this.columncelular_fornecedor.MaxLength = 40;
+                this.columntelefone1.MaxLength = 40;
+                this.columntelefone2.MaxLength = 40;
                 this.columnendereco_fornecedor.MaxLength = 255;
                 this.columnnumero_fornecedor.MaxLength = 10;
                 this.columncomplemento_fornecedor.MaxLength = 255;
                 this.columnbairro_fornecedor.MaxLength = 255;
                 this.columncep_fornecedor.MaxLength = 20;
                 this.columnemail_fornecedor.MaxLength = 255;
-                this.columncod_tipfor.MaxLength = 2;
+                this.columncodcidade.MaxLength = 2;
+                this.columnnomefantasia_fornecedor.MaxLength = 255;
+                this.columnie_fornecedor.MaxLength = 100;
+                this.columnim_fornecedor.MaxLength = 100;
+                this.columnnomecontato_fornecedor.MaxLength = 100;
+                this.columntelefone3.MaxLength = 40;
+                this.columnativo.MaxLength = 2;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7718,17 +7825,17 @@ namespace Projeto_Desktop {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string nomfornecedor {
+            public string razaosocialfor {
                 get {
                     try {
-                        return ((string)(this[this.tablecadfor.nomfornecedorColumn]));
+                        return ((string)(this[this.tablecadfor.razaosocialforColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'nomfornecedor\' na tabela \'cadfor\' é DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'razaosocialfor\' na tabela \'cadfor\' é DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablecadfor.nomfornecedorColumn] = value;
+                    this[this.tablecadfor.razaosocialforColumn] = value;
                 }
             }
             
@@ -7750,33 +7857,33 @@ namespace Projeto_Desktop {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string telefone_fornecedor {
+            public string telefone1 {
                 get {
                     try {
-                        return ((string)(this[this.tablecadfor.telefone_fornecedorColumn]));
+                        return ((string)(this[this.tablecadfor.telefone1Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'telefone_fornecedor\' na tabela \'cadfor\' é DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'telefone1\' na tabela \'cadfor\' é DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablecadfor.telefone_fornecedorColumn] = value;
+                    this[this.tablecadfor.telefone1Column] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string celular_fornecedor {
+            public string telefone2 {
                 get {
                     try {
-                        return ((string)(this[this.tablecadfor.celular_fornecedorColumn]));
+                        return ((string)(this[this.tablecadfor.telefone2Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'celular_fornecedor\' na tabela \'cadfor\' é DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'telefone2\' na tabela \'cadfor\' é DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablecadfor.celular_fornecedorColumn] = value;
+                    this[this.tablecadfor.telefone2Column] = value;
                 }
             }
             
@@ -7878,30 +7985,126 @@ namespace Projeto_Desktop {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string cod_tipfor {
+            public string codcidade {
                 get {
                     try {
-                        return ((string)(this[this.tablecadfor.cod_tipforColumn]));
+                        return ((string)(this[this.tablecadfor.codcidadeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'cod_tipfor\' na tabela \'cadfor\' é DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'codcidade\' na tabela \'cadfor\' é DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablecadfor.cod_tipforColumn] = value;
+                    this[this.tablecadfor.codcidadeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsnomfornecedorNull() {
-                return this.IsNull(this.tablecadfor.nomfornecedorColumn);
+            public string nomefantasia_fornecedor {
+                get {
+                    try {
+                        return ((string)(this[this.tablecadfor.nomefantasia_fornecedorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'nomefantasia_fornecedor\' na tabela \'cadfor\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecadfor.nomefantasia_fornecedorColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetnomfornecedorNull() {
-                this[this.tablecadfor.nomfornecedorColumn] = global::System.Convert.DBNull;
+            public string ie_fornecedor {
+                get {
+                    try {
+                        return ((string)(this[this.tablecadfor.ie_fornecedorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'ie_fornecedor\' na tabela \'cadfor\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecadfor.ie_fornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string im_fornecedor {
+                get {
+                    try {
+                        return ((string)(this[this.tablecadfor.im_fornecedorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'im_fornecedor\' na tabela \'cadfor\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecadfor.im_fornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string nomecontato_fornecedor {
+                get {
+                    try {
+                        return ((string)(this[this.tablecadfor.nomecontato_fornecedorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'nomecontato_fornecedor\' na tabela \'cadfor\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecadfor.nomecontato_fornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string telefone3 {
+                get {
+                    try {
+                        return ((string)(this[this.tablecadfor.telefone3Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'telefone3\' na tabela \'cadfor\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecadfor.telefone3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string ativo {
+                get {
+                    try {
+                        return ((string)(this[this.tablecadfor.ativoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'ativo\' na tabela \'cadfor\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecadfor.ativoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsrazaosocialforNull() {
+                return this.IsNull(this.tablecadfor.razaosocialforColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetrazaosocialforNull() {
+                this[this.tablecadfor.razaosocialforColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7918,26 +8121,26 @@ namespace Projeto_Desktop {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Istelefone_fornecedorNull() {
-                return this.IsNull(this.tablecadfor.telefone_fornecedorColumn);
+            public bool Istelefone1Null() {
+                return this.IsNull(this.tablecadfor.telefone1Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Settelefone_fornecedorNull() {
-                this[this.tablecadfor.telefone_fornecedorColumn] = global::System.Convert.DBNull;
+            public void Settelefone1Null() {
+                this[this.tablecadfor.telefone1Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Iscelular_fornecedorNull() {
-                return this.IsNull(this.tablecadfor.celular_fornecedorColumn);
+            public bool Istelefone2Null() {
+                return this.IsNull(this.tablecadfor.telefone2Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setcelular_fornecedorNull() {
-                this[this.tablecadfor.celular_fornecedorColumn] = global::System.Convert.DBNull;
+            public void Settelefone2Null() {
+                this[this.tablecadfor.telefone2Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8014,14 +8217,86 @@ namespace Projeto_Desktop {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Iscod_tipforNull() {
-                return this.IsNull(this.tablecadfor.cod_tipforColumn);
+            public bool IscodcidadeNull() {
+                return this.IsNull(this.tablecadfor.codcidadeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setcod_tipforNull() {
-                this[this.tablecadfor.cod_tipforColumn] = global::System.Convert.DBNull;
+            public void SetcodcidadeNull() {
+                this[this.tablecadfor.codcidadeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isnomefantasia_fornecedorNull() {
+                return this.IsNull(this.tablecadfor.nomefantasia_fornecedorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setnomefantasia_fornecedorNull() {
+                this[this.tablecadfor.nomefantasia_fornecedorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isie_fornecedorNull() {
+                return this.IsNull(this.tablecadfor.ie_fornecedorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setie_fornecedorNull() {
+                this[this.tablecadfor.ie_fornecedorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isim_fornecedorNull() {
+                return this.IsNull(this.tablecadfor.im_fornecedorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setim_fornecedorNull() {
+                this[this.tablecadfor.im_fornecedorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isnomecontato_fornecedorNull() {
+                return this.IsNull(this.tablecadfor.nomecontato_fornecedorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setnomecontato_fornecedorNull() {
+                this[this.tablecadfor.nomecontato_fornecedorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Istelefone3Null() {
+                return this.IsNull(this.tablecadfor.telefone3Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Settelefone3Null() {
+                this[this.tablecadfor.telefone3Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsativoNull() {
+                return this.IsNull(this.tablecadfor.ativoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetativoNull() {
+                this[this.tablecadfor.ativoColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -12273,31 +12548,37 @@ namespace Projeto_Desktop.DataSet1TableAdapters {
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "cadfor";
             tableMapping.ColumnMappings.Add("codfor", "codfor");
-            tableMapping.ColumnMappings.Add("nomfornecedor", "nomfornecedor");
+            tableMapping.ColumnMappings.Add("razaosocialfor", "razaosocialfor");
             tableMapping.ColumnMappings.Add("cnpj_fornecedor", "cnpj_fornecedor");
-            tableMapping.ColumnMappings.Add("telefone_fornecedor", "telefone_fornecedor");
-            tableMapping.ColumnMappings.Add("celular_fornecedor", "celular_fornecedor");
+            tableMapping.ColumnMappings.Add("telefone1", "telefone1");
+            tableMapping.ColumnMappings.Add("telefone2", "telefone2");
             tableMapping.ColumnMappings.Add("endereco_fornecedor", "endereco_fornecedor");
             tableMapping.ColumnMappings.Add("numero_fornecedor", "numero_fornecedor");
             tableMapping.ColumnMappings.Add("complemento_fornecedor", "complemento_fornecedor");
             tableMapping.ColumnMappings.Add("bairro_fornecedor", "bairro_fornecedor");
             tableMapping.ColumnMappings.Add("cep_fornecedor", "cep_fornecedor");
             tableMapping.ColumnMappings.Add("email_fornecedor", "email_fornecedor");
-            tableMapping.ColumnMappings.Add("cod_tipfor", "cod_tipfor");
+            tableMapping.ColumnMappings.Add("codcidade", "codcidade");
+            tableMapping.ColumnMappings.Add("nomefantasia_fornecedor", "nomefantasia_fornecedor");
+            tableMapping.ColumnMappings.Add("ie_fornecedor", "ie_fornecedor");
+            tableMapping.ColumnMappings.Add("im_fornecedor", "im_fornecedor");
+            tableMapping.ColumnMappings.Add("nomecontato_fornecedor", "nomecontato_fornecedor");
+            tableMapping.ColumnMappings.Add("telefone3", "telefone3");
+            tableMapping.ColumnMappings.Add("ativo", "ativo");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.Odbc.OdbcCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM ""MegaPDV"".""public"".""cadfor"" WHERE ((""codfor"" = ?) AND ((? = 1 AND ""nomfornecedor"" IS NULL) OR (""nomfornecedor"" = ?)) AND ((? = 1 AND ""cnpj_fornecedor"" IS NULL) OR (""cnpj_fornecedor"" = ?)) AND ((? = 1 AND ""telefone_fornecedor"" IS NULL) OR (""telefone_fornecedor"" = ?)) AND ((? = 1 AND ""celular_fornecedor"" IS NULL) OR (""celular_fornecedor"" = ?)) AND ((? = 1 AND ""endereco_fornecedor"" IS NULL) OR (""endereco_fornecedor"" = ?)) AND ((? = 1 AND ""numero_fornecedor"" IS NULL) OR (""numero_fornecedor"" = ?)) AND ((? = 1 AND ""complemento_fornecedor"" IS NULL) OR (""complemento_fornecedor"" = ?)) AND ((? = 1 AND ""bairro_fornecedor"" IS NULL) OR (""bairro_fornecedor"" = ?)) AND ((? = 1 AND ""cep_fornecedor"" IS NULL) OR (""cep_fornecedor"" = ?)) AND ((? = 1 AND ""email_fornecedor"" IS NULL) OR (""email_fornecedor"" = ?)) AND ((? = 1 AND ""cod_tipfor"" IS NULL) OR (""cod_tipfor"" = ?)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM ""MegaPDV"".""public"".""cadfor"" WHERE ((""codfor"" = ?) AND ((? = 1 AND ""razaosocialfor"" IS NULL) OR (""razaosocialfor"" = ?)) AND ((? = 1 AND ""cnpj_fornecedor"" IS NULL) OR (""cnpj_fornecedor"" = ?)) AND ((? = 1 AND ""telefone1"" IS NULL) OR (""telefone1"" = ?)) AND ((? = 1 AND ""telefone2"" IS NULL) OR (""telefone2"" = ?)) AND ((? = 1 AND ""endereco_fornecedor"" IS NULL) OR (""endereco_fornecedor"" = ?)) AND ((? = 1 AND ""numero_fornecedor"" IS NULL) OR (""numero_fornecedor"" = ?)) AND ((? = 1 AND ""complemento_fornecedor"" IS NULL) OR (""complemento_fornecedor"" = ?)) AND ((? = 1 AND ""bairro_fornecedor"" IS NULL) OR (""bairro_fornecedor"" = ?)) AND ((? = 1 AND ""cep_fornecedor"" IS NULL) OR (""cep_fornecedor"" = ?)) AND ((? = 1 AND ""email_fornecedor"" IS NULL) OR (""email_fornecedor"" = ?)) AND ((? = 1 AND ""codcidade"" IS NULL) OR (""codcidade"" = ?)) AND ((? = 1 AND ""nomefantasia_fornecedor"" IS NULL) OR (""nomefantasia_fornecedor"" = ?)) AND ((? = 1 AND ""ie_fornecedor"" IS NULL) OR (""ie_fornecedor"" = ?)) AND ((? = 1 AND ""im_fornecedor"" IS NULL) OR (""im_fornecedor"" = ?)) AND ((? = 1 AND ""nomecontato_fornecedor"" IS NULL) OR (""nomecontato_fornecedor"" = ?)) AND ((? = 1 AND ""telefone3"" IS NULL) OR (""telefone3"" = ?)) AND ((? = 1 AND ""ativo"" IS NULL) OR (""ativo"" = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_codfor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "codfor", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_nomfornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nomfornecedor", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_nomfornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nomfornecedor", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_razaosocialfor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "razaosocialfor", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_razaosocialfor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "razaosocialfor", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_cnpj_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "cnpj_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_cnpj_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "cnpj_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_telefone_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_telefone_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_celular_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "celular_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_celular_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "celular_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_telefone1", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone1", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_telefone1", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone1", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_telefone2", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone2", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_telefone2", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone2", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_endereco_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "endereco_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_endereco_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "endereco_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_numero_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "numero_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
@@ -12310,47 +12591,91 @@ namespace Projeto_Desktop.DataSet1TableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_cep_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "cep_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_email_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "email_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_email_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "email_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_cod_tipfor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "cod_tipfor", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_cod_tipfor", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "cod_tipfor", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_codcidade", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "codcidade", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_codcidade", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "codcidade", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_nomefantasia_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nomefantasia_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_nomefantasia_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nomefantasia_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_ie_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ie_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_ie_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ie_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_im_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "im_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_im_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "im_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_nomecontato_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nomecontato_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_nomecontato_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nomecontato_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_telefone3", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone3", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_telefone3", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone3", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_ativo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ativo", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_ativo", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ativo", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.Odbc.OdbcCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO ""MegaPDV"".""public"".""cadfor"" (""nomfornecedor"", ""cnpj_fornecedor"", ""telefone_fornecedor"", ""celular_fornecedor"", ""endereco_fornecedor"", ""numero_fornecedor"", ""complemento_fornecedor"", ""bairro_fornecedor"", ""cep_fornecedor"", ""email_fornecedor"", ""cod_tipfor"") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO ""MegaPDV"".""public"".""cadfor"" (""razaosocialfor"", ""cnpj_fornecedor"", ""telefone1"", ""telefone2"", ""endereco_fornecedor"", ""numero_fornecedor"", ""complemento_fornecedor"", ""bairro_fornecedor"", ""cep_fornecedor"", ""email_fornecedor"", ""codcidade"", ""nomefantasia_fornecedor"", ""ie_fornecedor"", ""im_fornecedor"", ""nomecontato_fornecedor"", ""telefone3"", ""ativo"") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("nomfornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nomfornecedor", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("razaosocialfor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "razaosocialfor", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("cnpj_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "cnpj_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("telefone_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("celular_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "celular_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("telefone1", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone1", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("telefone2", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone2", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("endereco_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "endereco_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("numero_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "numero_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("complemento_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "complemento_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("bairro_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "bairro_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("cep_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "cep_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("email_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "email_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("cod_tipfor", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "cod_tipfor", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("codcidade", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "codcidade", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("nomefantasia_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nomefantasia_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ie_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ie_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("im_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "im_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("nomecontato_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nomecontato_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("telefone3", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone3", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ativo", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ativo", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.Odbc.OdbcCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE ""MegaPDV"".""public"".""cadfor"" SET ""nomfornecedor"" = ?, ""cnpj_fornecedor"" = ?, ""telefone_fornecedor"" = ?, ""celular_fornecedor"" = ?, ""endereco_fornecedor"" = ?, ""numero_fornecedor"" = ?, ""complemento_fornecedor"" = ?, ""bairro_fornecedor"" = ?, ""cep_fornecedor"" = ?, ""email_fornecedor"" = ?, ""cod_tipfor"" = ? WHERE ((""codfor"" = ?) AND ((? = 1 AND ""nomfornecedor"" IS NULL) OR (""nomfornecedor"" = ?)) AND ((? = 1 AND ""cnpj_fornecedor"" IS NULL) OR (""cnpj_fornecedor"" = ?)) AND ((? = 1 AND ""telefone_fornecedor"" IS NULL) OR (""telefone_fornecedor"" = ?)) AND ((? = 1 AND ""celular_fornecedor"" IS NULL) OR (""celular_fornecedor"" = ?)) AND ((? = 1 AND ""endereco_fornecedor"" IS NULL) OR (""endereco_fornecedor"" = ?)) AND ((? = 1 AND ""numero_fornecedor"" IS NULL) OR (""numero_fornecedor"" = ?)) AND ((? = 1 AND ""complemento_fornecedor"" IS NULL) OR (""complemento_fornecedor"" = ?)) AND ((? = 1 AND ""bairro_fornecedor"" IS NULL) OR (""bairro_fornecedor"" = ?)) AND ((? = 1 AND ""cep_fornecedor"" IS NULL) OR (""cep_fornecedor"" = ?)) AND ((? = 1 AND ""email_fornecedor"" IS NULL) OR (""email_fornecedor"" = ?)) AND ((? = 1 AND ""cod_tipfor"" IS NULL) OR (""cod_tipfor"" = ?)))";
+            this._adapter.UpdateCommand.CommandText = "UPDATE \"MegaPDV\".\"public\".\"cadfor\" SET \"razaosocialfor\" = ?, \"cnpj_fornecedor\" = " +
+                "?, \"telefone1\" = ?, \"telefone2\" = ?, \"endereco_fornecedor\" = ?, \"numero_forneced" +
+                "or\" = ?, \"complemento_fornecedor\" = ?, \"bairro_fornecedor\" = ?, \"cep_fornecedor\"" +
+                " = ?, \"email_fornecedor\" = ?, \"codcidade\" = ?, \"nomefantasia_fornecedor\" = ?, \"i" +
+                "e_fornecedor\" = ?, \"im_fornecedor\" = ?, \"nomecontato_fornecedor\" = ?, \"telefone3" +
+                "\" = ?, \"ativo\" = ? WHERE ((\"codfor\" = ?) AND ((? = 1 AND \"razaosocialfor\" IS NUL" +
+                "L) OR (\"razaosocialfor\" = ?)) AND ((? = 1 AND \"cnpj_fornecedor\" IS NULL) OR (\"cn" +
+                "pj_fornecedor\" = ?)) AND ((? = 1 AND \"telefone1\" IS NULL) OR (\"telefone1\" = ?)) " +
+                "AND ((? = 1 AND \"telefone2\" IS NULL) OR (\"telefone2\" = ?)) AND ((? = 1 AND \"ende" +
+                "reco_fornecedor\" IS NULL) OR (\"endereco_fornecedor\" = ?)) AND ((? = 1 AND \"numer" +
+                "o_fornecedor\" IS NULL) OR (\"numero_fornecedor\" = ?)) AND ((? = 1 AND \"complement" +
+                "o_fornecedor\" IS NULL) OR (\"complemento_fornecedor\" = ?)) AND ((? = 1 AND \"bairr" +
+                "o_fornecedor\" IS NULL) OR (\"bairro_fornecedor\" = ?)) AND ((? = 1 AND \"cep_fornec" +
+                "edor\" IS NULL) OR (\"cep_fornecedor\" = ?)) AND ((? = 1 AND \"email_fornecedor\" IS " +
+                "NULL) OR (\"email_fornecedor\" = ?)) AND ((? = 1 AND \"codcidade\" IS NULL) OR (\"cod" +
+                "cidade\" = ?)) AND ((? = 1 AND \"nomefantasia_fornecedor\" IS NULL) OR (\"nomefantas" +
+                "ia_fornecedor\" = ?)) AND ((? = 1 AND \"ie_fornecedor\" IS NULL) OR (\"ie_fornecedor" +
+                "\" = ?)) AND ((? = 1 AND \"im_fornecedor\" IS NULL) OR (\"im_fornecedor\" = ?)) AND (" +
+                "(? = 1 AND \"nomecontato_fornecedor\" IS NULL) OR (\"nomecontato_fornecedor\" = ?)) " +
+                "AND ((? = 1 AND \"telefone3\" IS NULL) OR (\"telefone3\" = ?)) AND ((? = 1 AND \"ativ" +
+                "o\" IS NULL) OR (\"ativo\" = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("nomfornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nomfornecedor", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("razaosocialfor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "razaosocialfor", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("cnpj_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "cnpj_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("telefone_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("celular_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "celular_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("telefone1", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone1", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("telefone2", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone2", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("endereco_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "endereco_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("numero_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "numero_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("complemento_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "complemento_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("bairro_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "bairro_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("cep_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "cep_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("email_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "email_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("cod_tipfor", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "cod_tipfor", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("codcidade", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "codcidade", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("nomefantasia_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nomefantasia_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ie_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ie_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("im_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "im_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("nomecontato_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nomecontato_fornecedor", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("telefone3", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone3", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ativo", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ativo", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_codfor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "codfor", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_nomfornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nomfornecedor", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_nomfornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nomfornecedor", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_razaosocialfor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "razaosocialfor", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_razaosocialfor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "razaosocialfor", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_cnpj_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "cnpj_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_cnpj_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "cnpj_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_telefone_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_telefone_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_celular_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "celular_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_celular_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "celular_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_telefone1", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone1", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_telefone1", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone1", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_telefone2", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone2", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_telefone2", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone2", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_endereco_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "endereco_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_endereco_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "endereco_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_numero_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "numero_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
@@ -12363,8 +12688,20 @@ namespace Projeto_Desktop.DataSet1TableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_cep_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "cep_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_email_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "email_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_email_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "email_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_cod_tipfor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "cod_tipfor", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_cod_tipfor", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "cod_tipfor", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_codcidade", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "codcidade", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_codcidade", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "codcidade", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_nomefantasia_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nomefantasia_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_nomefantasia_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nomefantasia_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_ie_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ie_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_ie_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ie_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_im_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "im_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_im_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "im_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_nomecontato_fornecedor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nomecontato_fornecedor", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_nomecontato_fornecedor", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nomecontato_fornecedor", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_telefone3", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone3", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_telefone3", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "telefone3", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_ativo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ativo", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_ativo", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ativo", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -12380,7 +12717,7 @@ namespace Projeto_Desktop.DataSet1TableAdapters {
             this._commandCollection = new global::System.Data.Odbc.OdbcCommand[1];
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT ""codfor"", ""nomfornecedor"", ""cnpj_fornecedor"", ""telefone_fornecedor"", ""celular_fornecedor"", ""endereco_fornecedor"", ""numero_fornecedor"", ""complemento_fornecedor"", ""bairro_fornecedor"", ""cep_fornecedor"", ""email_fornecedor"", ""cod_tipfor"" FROM ""public"".""cadfor""";
+            this._commandCollection[0].CommandText = @"SELECT ""codfor"", ""razaosocialfor"", ""cnpj_fornecedor"", ""telefone1"", ""telefone2"", ""endereco_fornecedor"", ""numero_fornecedor"", ""complemento_fornecedor"", ""bairro_fornecedor"", ""cep_fornecedor"", ""email_fornecedor"", ""codcidade"", ""nomefantasia_fornecedor"", ""ie_fornecedor"", ""im_fornecedor"", ""nomecontato_fornecedor"", ""telefone3"", ""ativo"" FROM ""public"".""cadfor""";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -12441,14 +12778,32 @@ namespace Projeto_Desktop.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_codfor, string Original_nomfornecedor, string Original_cnpj_fornecedor, string Original_telefone_fornecedor, string Original_celular_fornecedor, string Original_endereco_fornecedor, string Original_numero_fornecedor, string Original_complemento_fornecedor, string Original_bairro_fornecedor, string Original_cep_fornecedor, string Original_email_fornecedor, string Original_cod_tipfor) {
+        public virtual int Delete(
+                    int Original_codfor, 
+                    string Original_razaosocialfor, 
+                    string Original_cnpj_fornecedor, 
+                    string Original_telefone1, 
+                    string Original_telefone2, 
+                    string Original_endereco_fornecedor, 
+                    string Original_numero_fornecedor, 
+                    string Original_complemento_fornecedor, 
+                    string Original_bairro_fornecedor, 
+                    string Original_cep_fornecedor, 
+                    string Original_email_fornecedor, 
+                    string Original_codcidade, 
+                    string Original_nomefantasia_fornecedor, 
+                    string Original_ie_fornecedor, 
+                    string Original_im_fornecedor, 
+                    string Original_nomecontato_fornecedor, 
+                    string Original_telefone3, 
+                    string Original_ativo) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_codfor));
-            if ((Original_nomfornecedor == null)) {
-                throw new global::System.ArgumentNullException("Original_nomfornecedor");
+            if ((Original_razaosocialfor == null)) {
+                throw new global::System.ArgumentNullException("Original_razaosocialfor");
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_nomfornecedor));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_razaosocialfor));
             }
             if ((Original_cnpj_fornecedor == null)) {
                 throw new global::System.ArgumentNullException("Original_cnpj_fornecedor");
@@ -12457,19 +12812,19 @@ namespace Projeto_Desktop.DataSet1TableAdapters {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_cnpj_fornecedor));
             }
-            if ((Original_telefone_fornecedor == null)) {
-                throw new global::System.ArgumentNullException("Original_telefone_fornecedor");
+            if ((Original_telefone1 == null)) {
+                throw new global::System.ArgumentNullException("Original_telefone1");
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_telefone_fornecedor));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_telefone1));
             }
-            if ((Original_celular_fornecedor == null)) {
-                throw new global::System.ArgumentNullException("Original_celular_fornecedor");
+            if ((Original_telefone2 == null)) {
+                throw new global::System.ArgumentNullException("Original_telefone2");
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_celular_fornecedor));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_telefone2));
             }
             if ((Original_endereco_fornecedor == null)) {
                 throw new global::System.ArgumentNullException("Original_endereco_fornecedor");
@@ -12513,12 +12868,54 @@ namespace Projeto_Desktop.DataSet1TableAdapters {
                 this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[20].Value = ((string)(Original_email_fornecedor));
             }
-            if ((Original_cod_tipfor == null)) {
-                throw new global::System.ArgumentNullException("Original_cod_tipfor");
+            if ((Original_codcidade == null)) {
+                throw new global::System.ArgumentNullException("Original_codcidade");
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[22].Value = ((string)(Original_cod_tipfor));
+                this.Adapter.DeleteCommand.Parameters[22].Value = ((string)(Original_codcidade));
+            }
+            if ((Original_nomefantasia_fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_nomefantasia_fornecedor");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[24].Value = ((string)(Original_nomefantasia_fornecedor));
+            }
+            if ((Original_ie_fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_ie_fornecedor");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[26].Value = ((string)(Original_ie_fornecedor));
+            }
+            if ((Original_im_fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_im_fornecedor");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[27].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[28].Value = ((string)(Original_im_fornecedor));
+            }
+            if ((Original_nomecontato_fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_nomecontato_fornecedor");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[29].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[30].Value = ((string)(Original_nomecontato_fornecedor));
+            }
+            if ((Original_telefone3 == null)) {
+                throw new global::System.ArgumentNullException("Original_telefone3");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[31].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[32].Value = ((string)(Original_telefone3));
+            }
+            if ((Original_ativo == null)) {
+                throw new global::System.ArgumentNullException("Original_ativo");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[33].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[34].Value = ((string)(Original_ativo));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -12540,12 +12937,29 @@ namespace Projeto_Desktop.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string nomfornecedor, string cnpj_fornecedor, string telefone_fornecedor, string celular_fornecedor, string endereco_fornecedor, string numero_fornecedor, string complemento_fornecedor, string bairro_fornecedor, string cep_fornecedor, string email_fornecedor, string cod_tipfor) {
-            if ((nomfornecedor == null)) {
-                throw new global::System.ArgumentNullException("nomfornecedor");
+        public virtual int Insert(
+                    string razaosocialfor, 
+                    string cnpj_fornecedor, 
+                    string telefone1, 
+                    string telefone2, 
+                    string endereco_fornecedor, 
+                    string numero_fornecedor, 
+                    string complemento_fornecedor, 
+                    string bairro_fornecedor, 
+                    string cep_fornecedor, 
+                    string email_fornecedor, 
+                    string codcidade, 
+                    string nomefantasia_fornecedor, 
+                    string ie_fornecedor, 
+                    string im_fornecedor, 
+                    string nomecontato_fornecedor, 
+                    string telefone3, 
+                    string ativo) {
+            if ((razaosocialfor == null)) {
+                throw new global::System.ArgumentNullException("razaosocialfor");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(nomfornecedor));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(razaosocialfor));
             }
             if ((cnpj_fornecedor == null)) {
                 throw new global::System.ArgumentNullException("cnpj_fornecedor");
@@ -12553,17 +12967,17 @@ namespace Projeto_Desktop.DataSet1TableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(cnpj_fornecedor));
             }
-            if ((telefone_fornecedor == null)) {
-                throw new global::System.ArgumentNullException("telefone_fornecedor");
+            if ((telefone1 == null)) {
+                throw new global::System.ArgumentNullException("telefone1");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(telefone_fornecedor));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(telefone1));
             }
-            if ((celular_fornecedor == null)) {
-                throw new global::System.ArgumentNullException("celular_fornecedor");
+            if ((telefone2 == null)) {
+                throw new global::System.ArgumentNullException("telefone2");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(celular_fornecedor));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(telefone2));
             }
             if ((endereco_fornecedor == null)) {
                 throw new global::System.ArgumentNullException("endereco_fornecedor");
@@ -12601,11 +13015,47 @@ namespace Projeto_Desktop.DataSet1TableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[9].Value = ((string)(email_fornecedor));
             }
-            if ((cod_tipfor == null)) {
-                throw new global::System.ArgumentNullException("cod_tipfor");
+            if ((codcidade == null)) {
+                throw new global::System.ArgumentNullException("codcidade");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(cod_tipfor));
+                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(codcidade));
+            }
+            if ((nomefantasia_fornecedor == null)) {
+                throw new global::System.ArgumentNullException("nomefantasia_fornecedor");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(nomefantasia_fornecedor));
+            }
+            if ((ie_fornecedor == null)) {
+                throw new global::System.ArgumentNullException("ie_fornecedor");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(ie_fornecedor));
+            }
+            if ((im_fornecedor == null)) {
+                throw new global::System.ArgumentNullException("im_fornecedor");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[13].Value = ((string)(im_fornecedor));
+            }
+            if ((nomecontato_fornecedor == null)) {
+                throw new global::System.ArgumentNullException("nomecontato_fornecedor");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[14].Value = ((string)(nomecontato_fornecedor));
+            }
+            if ((telefone3 == null)) {
+                throw new global::System.ArgumentNullException("telefone3");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[15].Value = ((string)(telefone3));
+            }
+            if ((ativo == null)) {
+                throw new global::System.ArgumentNullException("ativo");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[16].Value = ((string)(ativo));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -12628,34 +13078,46 @@ namespace Projeto_Desktop.DataSet1TableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string nomfornecedor, 
+                    string razaosocialfor, 
                     string cnpj_fornecedor, 
-                    string telefone_fornecedor, 
-                    string celular_fornecedor, 
+                    string telefone1, 
+                    string telefone2, 
                     string endereco_fornecedor, 
                     string numero_fornecedor, 
                     string complemento_fornecedor, 
                     string bairro_fornecedor, 
                     string cep_fornecedor, 
                     string email_fornecedor, 
-                    string cod_tipfor, 
+                    string codcidade, 
+                    string nomefantasia_fornecedor, 
+                    string ie_fornecedor, 
+                    string im_fornecedor, 
+                    string nomecontato_fornecedor, 
+                    string telefone3, 
+                    string ativo, 
                     int Original_codfor, 
-                    string Original_nomfornecedor, 
+                    string Original_razaosocialfor, 
                     string Original_cnpj_fornecedor, 
-                    string Original_telefone_fornecedor, 
-                    string Original_celular_fornecedor, 
+                    string Original_telefone1, 
+                    string Original_telefone2, 
                     string Original_endereco_fornecedor, 
                     string Original_numero_fornecedor, 
                     string Original_complemento_fornecedor, 
                     string Original_bairro_fornecedor, 
                     string Original_cep_fornecedor, 
                     string Original_email_fornecedor, 
-                    string Original_cod_tipfor) {
-            if ((nomfornecedor == null)) {
-                throw new global::System.ArgumentNullException("nomfornecedor");
+                    string Original_codcidade, 
+                    string Original_nomefantasia_fornecedor, 
+                    string Original_ie_fornecedor, 
+                    string Original_im_fornecedor, 
+                    string Original_nomecontato_fornecedor, 
+                    string Original_telefone3, 
+                    string Original_ativo) {
+            if ((razaosocialfor == null)) {
+                throw new global::System.ArgumentNullException("razaosocialfor");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(nomfornecedor));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(razaosocialfor));
             }
             if ((cnpj_fornecedor == null)) {
                 throw new global::System.ArgumentNullException("cnpj_fornecedor");
@@ -12663,17 +13125,17 @@ namespace Projeto_Desktop.DataSet1TableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(cnpj_fornecedor));
             }
-            if ((telefone_fornecedor == null)) {
-                throw new global::System.ArgumentNullException("telefone_fornecedor");
+            if ((telefone1 == null)) {
+                throw new global::System.ArgumentNullException("telefone1");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(telefone_fornecedor));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(telefone1));
             }
-            if ((celular_fornecedor == null)) {
-                throw new global::System.ArgumentNullException("celular_fornecedor");
+            if ((telefone2 == null)) {
+                throw new global::System.ArgumentNullException("telefone2");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(celular_fornecedor));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(telefone2));
             }
             if ((endereco_fornecedor == null)) {
                 throw new global::System.ArgumentNullException("endereco_fornecedor");
@@ -12711,89 +13173,167 @@ namespace Projeto_Desktop.DataSet1TableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(email_fornecedor));
             }
-            if ((cod_tipfor == null)) {
-                throw new global::System.ArgumentNullException("cod_tipfor");
+            if ((codcidade == null)) {
+                throw new global::System.ArgumentNullException("codcidade");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(cod_tipfor));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(codcidade));
             }
-            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_codfor));
-            if ((Original_nomfornecedor == null)) {
-                throw new global::System.ArgumentNullException("Original_nomfornecedor");
+            if ((nomefantasia_fornecedor == null)) {
+                throw new global::System.ArgumentNullException("nomefantasia_fornecedor");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_nomfornecedor));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(nomefantasia_fornecedor));
+            }
+            if ((ie_fornecedor == null)) {
+                throw new global::System.ArgumentNullException("ie_fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(ie_fornecedor));
+            }
+            if ((im_fornecedor == null)) {
+                throw new global::System.ArgumentNullException("im_fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(im_fornecedor));
+            }
+            if ((nomecontato_fornecedor == null)) {
+                throw new global::System.ArgumentNullException("nomecontato_fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(nomecontato_fornecedor));
+            }
+            if ((telefone3 == null)) {
+                throw new global::System.ArgumentNullException("telefone3");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(telefone3));
+            }
+            if ((ativo == null)) {
+                throw new global::System.ArgumentNullException("ativo");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(ativo));
+            }
+            this.Adapter.UpdateCommand.Parameters[17].Value = ((int)(Original_codfor));
+            if ((Original_razaosocialfor == null)) {
+                throw new global::System.ArgumentNullException("Original_razaosocialfor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_razaosocialfor));
             }
             if ((Original_cnpj_fornecedor == null)) {
                 throw new global::System.ArgumentNullException("Original_cnpj_fornecedor");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_cnpj_fornecedor));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_cnpj_fornecedor));
             }
-            if ((Original_telefone_fornecedor == null)) {
-                throw new global::System.ArgumentNullException("Original_telefone_fornecedor");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_telefone_fornecedor));
-            }
-            if ((Original_celular_fornecedor == null)) {
-                throw new global::System.ArgumentNullException("Original_celular_fornecedor");
+            if ((Original_telefone1 == null)) {
+                throw new global::System.ArgumentNullException("Original_telefone1");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_celular_fornecedor));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_telefone1));
+            }
+            if ((Original_telefone2 == null)) {
+                throw new global::System.ArgumentNullException("Original_telefone2");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_telefone2));
             }
             if ((Original_endereco_fornecedor == null)) {
                 throw new global::System.ArgumentNullException("Original_endereco_fornecedor");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_endereco_fornecedor));
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_endereco_fornecedor));
             }
             if ((Original_numero_fornecedor == null)) {
                 throw new global::System.ArgumentNullException("Original_numero_fornecedor");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_numero_fornecedor));
+                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(Original_numero_fornecedor));
             }
             if ((Original_complemento_fornecedor == null)) {
                 throw new global::System.ArgumentNullException("Original_complemento_fornecedor");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_complemento_fornecedor));
+                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original_complemento_fornecedor));
             }
             if ((Original_bairro_fornecedor == null)) {
                 throw new global::System.ArgumentNullException("Original_bairro_fornecedor");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_bairro_fornecedor));
+                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[33].Value = ((string)(Original_bairro_fornecedor));
             }
             if ((Original_cep_fornecedor == null)) {
                 throw new global::System.ArgumentNullException("Original_cep_fornecedor");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(Original_cep_fornecedor));
+                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[35].Value = ((string)(Original_cep_fornecedor));
             }
             if ((Original_email_fornecedor == null)) {
                 throw new global::System.ArgumentNullException("Original_email_fornecedor");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original_email_fornecedor));
+                this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[37].Value = ((string)(Original_email_fornecedor));
             }
-            if ((Original_cod_tipfor == null)) {
-                throw new global::System.ArgumentNullException("Original_cod_tipfor");
+            if ((Original_codcidade == null)) {
+                throw new global::System.ArgumentNullException("Original_codcidade");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[33].Value = ((string)(Original_cod_tipfor));
+                this.Adapter.UpdateCommand.Parameters[38].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[39].Value = ((string)(Original_codcidade));
+            }
+            if ((Original_nomefantasia_fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_nomefantasia_fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[40].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[41].Value = ((string)(Original_nomefantasia_fornecedor));
+            }
+            if ((Original_ie_fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_ie_fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[42].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[43].Value = ((string)(Original_ie_fornecedor));
+            }
+            if ((Original_im_fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_im_fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[44].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[45].Value = ((string)(Original_im_fornecedor));
+            }
+            if ((Original_nomecontato_fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_nomecontato_fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[46].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[47].Value = ((string)(Original_nomecontato_fornecedor));
+            }
+            if ((Original_telefone3 == null)) {
+                throw new global::System.ArgumentNullException("Original_telefone3");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[48].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[49].Value = ((string)(Original_telefone3));
+            }
+            if ((Original_ativo == null)) {
+                throw new global::System.ArgumentNullException("Original_ativo");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[50].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[51].Value = ((string)(Original_ativo));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 

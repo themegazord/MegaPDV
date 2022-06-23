@@ -97,3 +97,6 @@ C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\pt
 C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.Fornecedor.resources
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.ManipulaFornecedor.resources
+C:\Users\SF\Desktop\Projeto Desktop\Projeto Desktop\Projeto Desktop\obj\Debug\Projeto_Desktop.Rel.RelacaoFornecedor.resources
