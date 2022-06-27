@@ -56,5 +56,26 @@ namespace Projeto_Desktop
             c.AtualizaDGV();
             c.ShowDialog();
         }
+
+        private void grupoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Grupo g = new Grupo();
+            g.AtualizaDGV();
+            g.ShowDialog();
+        }
+
+        private void subGrupoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SubGrupo sg = new SubGrupo();
+            sg.AtualizaDGV();
+            sg.ShowDialog();
+        }
+
+        private void unidadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Unidade u = new Unidade();
+            u.AtualizaDGV();
+            u.ShowDialog();
+        }
     }
 }

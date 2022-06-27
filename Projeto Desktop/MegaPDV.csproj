@@ -138,6 +138,9 @@
     <Compile Include="DadosConexao.Designer.cs">
       <DependentUpon>DadosConexao.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -161,6 +164,12 @@
     <Compile Include="Fornecedor.Designer.cs">
       <DependentUpon>Fornecedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Grupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grupo.Designer.cs">
+      <DependentUpon>Grupo.cs</DependentUpon>
+    </Compile>
     <Compile Include="IniFile.cs" />
     <Compile Include="ManipulaCidades.cs">
       <SubType>Form</SubType>
@@ -179,6 +188,24 @@
     </Compile>
     <Compile Include="ManipulaFornecedor.Designer.cs">
       <DependentUpon>ManipulaFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManipulaGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManipulaGrupo.Designer.cs">
+      <DependentUpon>ManipulaGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManipulaSubGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManipulaSubGrupo.Designer.cs">
+      <DependentUpon>ManipulaSubGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManipulaUnidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManipulaUnidade.Designer.cs">
+      <DependentUpon>ManipulaUnidade.cs</DependentUpon>
     </Compile>
     <Compile Include="ManipulaUsuario.cs">
       <SubType>Form</SubType>
@@ -212,11 +239,23 @@
     <Compile Include="Rel\RelacaoFornecedor.Designer.cs">
       <DependentUpon>RelacaoFornecedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubGrupo.Designer.cs">
+      <DependentUpon>SubGrupo.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TelaLogin.Designer.cs">
       <DependentUpon>TelaLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unidade.Designer.cs">
+      <DependentUpon>Unidade.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuarios.cs">
       <SubType>Form</SubType>
@@ -242,6 +281,9 @@
     <EmbeddedResource Include="Fornecedor.resx">
       <DependentUpon>Fornecedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Grupo.resx">
+      <DependentUpon>Grupo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManipulaCidades.resx">
       <DependentUpon>ManipulaCidades.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,6 +292,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManipulaFornecedor.resx">
       <DependentUpon>ManipulaFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManipulaGrupo.resx">
+      <DependentUpon>ManipulaGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManipulaSubGrupo.resx">
+      <DependentUpon>ManipulaSubGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManipulaUnidade.resx">
+      <DependentUpon>ManipulaUnidade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManipulaUsuario.resx">
       <DependentUpon>ManipulaUsuario.cs</DependentUpon>
@@ -277,8 +328,14 @@
     <EmbeddedResource Include="Rel\RelacaoFornecedor.resx">
       <DependentUpon>RelacaoFornecedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SubGrupo.resx">
+      <DependentUpon>SubGrupo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unidade.resx">
+      <DependentUpon>Unidade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
