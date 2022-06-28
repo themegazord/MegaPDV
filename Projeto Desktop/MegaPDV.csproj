@@ -195,6 +195,12 @@
     <Compile Include="ManipulaGrupo.Designer.cs">
       <DependentUpon>ManipulaGrupo.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManipulaProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManipulaProduto.Designer.cs">
+      <DependentUpon>ManipulaProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManipulaSubGrupo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +230,12 @@
     </Compile>
     <Compile Include="Pais.Designer.cs">
       <DependentUpon>Pais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produto.Designer.cs">
+      <DependentUpon>Produto.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -296,6 +308,9 @@
     <EmbeddedResource Include="ManipulaGrupo.resx">
       <DependentUpon>ManipulaGrupo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManipulaProduto.resx">
+      <DependentUpon>ManipulaProduto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManipulaSubGrupo.resx">
       <DependentUpon>ManipulaSubGrupo.cs</DependentUpon>
     </EmbeddedResource>
@@ -310,6 +325,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pais.resx">
       <DependentUpon>Pais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produto.resx">
+      <DependentUpon>Produto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

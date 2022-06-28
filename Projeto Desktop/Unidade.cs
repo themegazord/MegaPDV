@@ -12,10 +12,18 @@ namespace Projeto_Desktop
 {
     public partial class Unidade : Form
     {
-        public static string SelectedRow = "";
+        public string SelectedRow = "";
         public Unidade()
         {
             InitializeComponent();
+            btn_extrair.Hide();
+        }
+        public Unidade(bool extrai = false) : this()
+        {
+            if (extrai)
+            {
+                btn_extrair.Show();
+            }
         }
 
         public void AtualizaDGV()
@@ -89,6 +97,12 @@ namespace Projeto_Desktop
             mu.FormClosed += (s, args) => this.AtualizaDGV();
             mu.Text = "Atualiza Unidade";
             mu.ShowDialog();
+        }
+
+        private void btn_extrair_Click(object sender, EventArgs e)
+        {
+            SelectedRow = dgv_unidade.SelectedRows[0].Cells[0].Value.ToString();
+            this.Close();
         }
     }
 }

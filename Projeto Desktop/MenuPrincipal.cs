@@ -77,5 +77,11 @@ namespace Projeto_Desktop
             u.AtualizaDGV();
             u.ShowDialog();
         }
+
+        private void cadastroDeProdutoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Produto p = new Produto();
+            p.ShowDialog();
+        }
     }
 }

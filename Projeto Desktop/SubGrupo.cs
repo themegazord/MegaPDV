@@ -12,16 +12,17 @@ namespace Projeto_Desktop
 {
     public partial class SubGrupo : Form
     {
-        public static string SelectedRow = "";
+        public string SelectedRow = "";
         public SubGrupo()
         {
             InitializeComponent();
+            btn_extrair.Hide();
         }
-        public SubGrupo(bool extrai) : this()
+        public SubGrupo(bool extrai = false) : this()
         {
             if (extrai)
             {
-                SelectedRow = dgv_subgrupos.SelectedRows[0].Cells[0].Value.ToString();
+                btn_extrair.Show();
             }
         }
 
@@ -98,6 +99,12 @@ namespace Projeto_Desktop
             ManipulaSubGrupo msg = new ManipulaSubGrupo(id);
             msg.FormClosed += (s, args) => this.AtualizaDGV();
             msg.ShowDialog();
+        }
+
+        private void btn_extrair_Click(object sender, EventArgs e)
+        {
+            SelectedRow = dgv_subgrupos.SelectedRows[0].Cells[0].Value.ToString();
+            this.Close();
         }
     }
 }

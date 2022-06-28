@@ -42,6 +42,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_extrair = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_grupos)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -53,17 +54,17 @@
             this.dgv_grupos.AllowUserToOrderColumns = true;
             this.dgv_grupos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_grupos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_grupos.Location = new System.Drawing.Point(12, 131);
+            this.dgv_grupos.Location = new System.Drawing.Point(12, 141);
             this.dgv_grupos.Name = "dgv_grupos";
             this.dgv_grupos.ReadOnly = true;
             this.dgv_grupos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_grupos.Size = new System.Drawing.Size(419, 227);
+            this.dgv_grupos.Size = new System.Drawing.Size(419, 217);
             this.dgv_grupos.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 34);
+            this.label1.Location = new System.Drawing.Point(23, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 0;
@@ -71,14 +72,14 @@
             // 
             // tb_codigo
             // 
-            this.tb_codigo.Location = new System.Drawing.Point(64, 31);
+            this.tb_codigo.Location = new System.Drawing.Point(64, 42);
             this.tb_codigo.Name = "tb_codigo";
             this.tb_codigo.Size = new System.Drawing.Size(56, 20);
             this.tb_codigo.TabIndex = 1;
             // 
             // tb_nome
             // 
-            this.tb_nome.Location = new System.Drawing.Point(64, 62);
+            this.tb_nome.Location = new System.Drawing.Point(64, 73);
             this.tb_nome.Name = "tb_nome";
             this.tb_nome.Size = new System.Drawing.Size(232, 20);
             this.tb_nome.TabIndex = 2;
@@ -86,7 +87,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 65);
+            this.label2.Location = new System.Drawing.Point(23, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 0;
@@ -95,7 +96,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 100);
+            this.label3.Location = new System.Drawing.Point(23, 111);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 0;
@@ -105,7 +106,7 @@
             // 
             this.rb_ativo.AutoSize = true;
             this.rb_ativo.Checked = true;
-            this.rb_ativo.Location = new System.Drawing.Point(66, 98);
+            this.rb_ativo.Location = new System.Drawing.Point(66, 109);
             this.rb_ativo.Name = "rb_ativo";
             this.rb_ativo.Size = new System.Drawing.Size(49, 17);
             this.rb_ativo.TabIndex = 3;
@@ -116,7 +117,7 @@
             // rb_inativo
             // 
             this.rb_inativo.AutoSize = true;
-            this.rb_inativo.Location = new System.Drawing.Point(121, 98);
+            this.rb_inativo.Location = new System.Drawing.Point(121, 109);
             this.rb_inativo.Name = "rb_inativo";
             this.rb_inativo.Size = new System.Drawing.Size(57, 17);
             this.rb_inativo.TabIndex = 7;
@@ -127,7 +128,7 @@
             // rb_todos
             // 
             this.rb_todos.AutoSize = true;
-            this.rb_todos.Location = new System.Drawing.Point(184, 98);
+            this.rb_todos.Location = new System.Drawing.Point(184, 109);
             this.rb_todos.Name = "rb_todos";
             this.rb_todos.Size = new System.Drawing.Size(55, 17);
             this.rb_todos.TabIndex = 8;
@@ -136,7 +137,7 @@
             // 
             // btn_pesquisar
             // 
-            this.btn_pesquisar.Location = new System.Drawing.Point(356, 34);
+            this.btn_pesquisar.Location = new System.Drawing.Point(356, 62);
             this.btn_pesquisar.Name = "btn_pesquisar";
             this.btn_pesquisar.Size = new System.Drawing.Size(75, 33);
             this.btn_pesquisar.TabIndex = 4;
@@ -146,7 +147,7 @@
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.Location = new System.Drawing.Point(356, 82);
+            this.btn_cancelar.Location = new System.Drawing.Point(356, 100);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(75, 31);
             this.btn_cancelar.TabIndex = 5;
@@ -179,11 +180,22 @@
             this.editarToolStripMenuItem.Text = "Editar";
             this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
+            // btn_extrair
+            // 
+            this.btn_extrair.Location = new System.Drawing.Point(356, 27);
+            this.btn_extrair.Name = "btn_extrair";
+            this.btn_extrair.Size = new System.Drawing.Size(75, 31);
+            this.btn_extrair.TabIndex = 12;
+            this.btn_extrair.Text = "Extrair";
+            this.btn_extrair.UseVisualStyleBackColor = true;
+            this.btn_extrair.Click += new System.EventHandler(this.btn_extrair_Click);
+            // 
             // Grupo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(443, 370);
+            this.Controls.Add(this.btn_extrair);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_pesquisar);
             this.Controls.Add(this.rb_todos);
@@ -224,5 +236,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
+        private System.Windows.Forms.Button btn_extrair;
     }
 }

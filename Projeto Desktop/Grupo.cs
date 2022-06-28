@@ -12,16 +12,17 @@ namespace Projeto_Desktop
 {
     public partial class Grupo : Form
     {
-        public static string SelectedRow = "";
+        public string SelectedRow = "";
         public Grupo()
         {
             InitializeComponent();
+            btn_extrair.Hide();
         }
-        public Grupo(bool extrai) : this()
+        public Grupo(bool extrai = false) : this()
         {
             if (extrai)
             {
-                SelectedRow = dgv_grupos.SelectedRows[0].Cells[0].Value.ToString();
+                btn_extrair.Show();
             }
         }
 
@@ -97,6 +98,12 @@ namespace Projeto_Desktop
             mg.FormClosed += (s, args) => this.AtualizaDGV();
             mg.Text = "Atualiza Grupo";
             mg.ShowDialog();
+        }
+
+        private void btn_extrair_Click(object sender, EventArgs e)
+        {
+            SelectedRow = dgv_grupos.SelectedRows[0].Cells[0].Value.ToString();
+            this.Close();
         }
     }
 }

@@ -42,15 +42,15 @@
             this.cadastroDeProdutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estoqueToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.entradaDeProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.utilitáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.grupoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.subGrupoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msi_financeiro = new System.Windows.Forms.ToolStripMenuItem();
             this.contasAPagarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contasAReceberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msi_pedven = new System.Windows.Forms.ToolStripMenuItem();
             this.msi_caixa = new System.Windows.Forms.ToolStripMenuItem();
-            this.utilitáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.grupoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.subGrupoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.unidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -154,6 +154,7 @@
             this.cadastroDeProdutoToolStripMenuItem.Name = "cadastroDeProdutoToolStripMenuItem";
             this.cadastroDeProdutoToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.cadastroDeProdutoToolStripMenuItem.Text = "Cadastro de Produto";
+            this.cadastroDeProdutoToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeProdutoToolStripMenuItem_Click);
             // 
             // estoqueToolStripMenuItem1
             // 
@@ -166,6 +167,37 @@
             this.entradaDeProdutosToolStripMenuItem.Name = "entradaDeProdutosToolStripMenuItem";
             this.entradaDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.entradaDeProdutosToolStripMenuItem.Text = "Entrada de Produtos";
+            // 
+            // utilitáriosToolStripMenuItem
+            // 
+            this.utilitáriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.grupoToolStripMenuItem,
+            this.subGrupoToolStripMenuItem,
+            this.unidadeToolStripMenuItem});
+            this.utilitáriosToolStripMenuItem.Name = "utilitáriosToolStripMenuItem";
+            this.utilitáriosToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.utilitáriosToolStripMenuItem.Text = "Utilitários";
+            // 
+            // grupoToolStripMenuItem
+            // 
+            this.grupoToolStripMenuItem.Name = "grupoToolStripMenuItem";
+            this.grupoToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.grupoToolStripMenuItem.Text = "Grupo";
+            this.grupoToolStripMenuItem.Click += new System.EventHandler(this.grupoToolStripMenuItem_Click);
+            // 
+            // subGrupoToolStripMenuItem
+            // 
+            this.subGrupoToolStripMenuItem.Name = "subGrupoToolStripMenuItem";
+            this.subGrupoToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.subGrupoToolStripMenuItem.Text = "Sub-Grupo";
+            this.subGrupoToolStripMenuItem.Click += new System.EventHandler(this.subGrupoToolStripMenuItem_Click);
+            // 
+            // unidadeToolStripMenuItem
+            // 
+            this.unidadeToolStripMenuItem.Name = "unidadeToolStripMenuItem";
+            this.unidadeToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.unidadeToolStripMenuItem.Text = "Unidade";
+            this.unidadeToolStripMenuItem.Click += new System.EventHandler(this.unidadeToolStripMenuItem_Click);
             // 
             // msi_financeiro
             // 
@@ -199,37 +231,6 @@
             this.msi_caixa.Name = "msi_caixa";
             this.msi_caixa.Size = new System.Drawing.Size(48, 20);
             this.msi_caixa.Text = "Caixa";
-            // 
-            // utilitáriosToolStripMenuItem
-            // 
-            this.utilitáriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.grupoToolStripMenuItem,
-            this.subGrupoToolStripMenuItem,
-            this.unidadeToolStripMenuItem});
-            this.utilitáriosToolStripMenuItem.Name = "utilitáriosToolStripMenuItem";
-            this.utilitáriosToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
-            this.utilitáriosToolStripMenuItem.Text = "Utilitários";
-            // 
-            // grupoToolStripMenuItem
-            // 
-            this.grupoToolStripMenuItem.Name = "grupoToolStripMenuItem";
-            this.grupoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.grupoToolStripMenuItem.Text = "Grupo";
-            this.grupoToolStripMenuItem.Click += new System.EventHandler(this.grupoToolStripMenuItem_Click);
-            // 
-            // subGrupoToolStripMenuItem
-            // 
-            this.subGrupoToolStripMenuItem.Name = "subGrupoToolStripMenuItem";
-            this.subGrupoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.subGrupoToolStripMenuItem.Text = "Sub-Grupo";
-            this.subGrupoToolStripMenuItem.Click += new System.EventHandler(this.subGrupoToolStripMenuItem_Click);
-            // 
-            // unidadeToolStripMenuItem
-            // 
-            this.unidadeToolStripMenuItem.Name = "unidadeToolStripMenuItem";
-            this.unidadeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.unidadeToolStripMenuItem.Text = "Unidade";
-            this.unidadeToolStripMenuItem.Click += new System.EventHandler(this.unidadeToolStripMenuItem_Click);
             // 
             // MenuPrincipal
             // 
