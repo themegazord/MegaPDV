@@ -327,6 +327,7 @@
             this.btn_atualizar.TabIndex = 11;
             this.btn_atualizar.Text = "Atualizar";
             this.btn_atualizar.UseVisualStyleBackColor = true;
+            this.btn_atualizar.Click += new System.EventHandler(this.btn_atualizar_Click);
             // 
             // lb_mostra_id
             // 

@@ -13,6 +13,7 @@ namespace Projeto_Desktop
     public partial class Produto : Form
     {
         DataTable dt = new DataTable();
+        public string SelectedRow = "";
         public Produto()
         {
             InitializeComponent();
@@ -203,7 +204,25 @@ namespace Projeto_Desktop
         private void novoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ManipulaProduto mp = new ManipulaProduto();
+            mp.FormClosed += (s, args) => this.AtualizaDGV();
             mp.ShowDialog();
+        }
+
+        private void editarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SelectedRow = dgv_produtos.SelectedRows[0].Cells[0].Value.ToString();
+                ManipulaProduto mp = new ManipulaProduto(SelectedRow);
+                mp.Text = "Atualização de Produtos";
+                mp.FormClosed += (s, args) => this.AtualizaDGV();
+                mp.ShowDialog();
+            }
+            catch
+            {
+                MessageBox.Show("Erro ao selecionar um produto", "Erro");
+            }
+
         }
     }
 }
