@@ -116,26 +116,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cidades.cs">
+    <Compile Include="Forms\Cadastro\Cidades\Cidades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cidades.Designer.cs">
+    <Compile Include="Forms\Cadastro\Cidades\Cidades.Designer.cs">
       <DependentUpon>Cidades.cs</DependentUpon>
     </Compile>
-    <Compile Include="CLCripto.cs" />
-    <Compile Include="Clientes.cs">
+    <Compile Include="Adicionais\CLCripto.cs" />
+    <Compile Include="Forms\Cadastro\Clientes\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Clientes.Designer.cs">
+    <Compile Include="Forms\Cadastro\Clientes\Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConexaoAtiva.cs" />
-    <Compile Include="Connection.cs" />
+    <Compile Include="Adicionais\ConexaoAtiva.cs" />
+    <Compile Include="Adicionais\Connection.cs" />
     <Compile Include="ConvertReader.cs" />
-    <Compile Include="DadosConexao.cs">
+    <Compile Include="Forms\Login-Conexao\DadosConexao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DadosConexao.Designer.cs">
+    <Compile Include="Forms\Login-Conexao\DadosConexao.Designer.cs">
       <DependentUpon>DadosConexao.cs</DependentUpon>
     </Compile>
     <Compile Include="DataSet1.cs">
@@ -146,95 +146,95 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Estados.cs">
+    <Compile Include="Forms\Cadastro\Estados\Estados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Estados.Designer.cs">
+    <Compile Include="Forms\Cadastro\Estados\Estados.Designer.cs">
       <DependentUpon>Estados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\Login-Conexao\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Forms\Login-Conexao\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fornecedor.cs">
+    <Compile Include="Forms\Cadastro\Fornecedor\Fornecedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fornecedor.Designer.cs">
+    <Compile Include="Forms\Cadastro\Fornecedor\Fornecedor.Designer.cs">
       <DependentUpon>Fornecedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Grupo.cs">
+    <Compile Include="Forms\Estoque\Utilitarios\Grupo\Grupo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Grupo.Designer.cs">
+    <Compile Include="Forms\Estoque\Utilitarios\Grupo\Grupo.Designer.cs">
       <DependentUpon>Grupo.cs</DependentUpon>
     </Compile>
-    <Compile Include="IniFile.cs" />
-    <Compile Include="ManipulaCidades.cs">
+    <Compile Include="Adicionais\IniFile.cs" />
+    <Compile Include="Forms\Cadastro\Cidades\ManipulaCidades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManipulaCidades.Designer.cs">
+    <Compile Include="Forms\Cadastro\Cidades\ManipulaCidades.Designer.cs">
       <DependentUpon>ManipulaCidades.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManipulaCliente.cs">
+    <Compile Include="Forms\Cadastro\Clientes\ManipulaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManipulaCliente.Designer.cs">
+    <Compile Include="Forms\Cadastro\Clientes\ManipulaCliente.Designer.cs">
       <DependentUpon>ManipulaCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManipulaFornecedor.cs">
+    <Compile Include="Forms\Cadastro\Fornecedor\ManipulaFornecedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManipulaFornecedor.Designer.cs">
+    <Compile Include="Forms\Cadastro\Fornecedor\ManipulaFornecedor.Designer.cs">
       <DependentUpon>ManipulaFornecedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManipulaGrupo.cs">
+    <Compile Include="Forms\Estoque\Utilitarios\Grupo\ManipulaGrupo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManipulaGrupo.Designer.cs">
+    <Compile Include="Forms\Estoque\Utilitarios\Grupo\ManipulaGrupo.Designer.cs">
       <DependentUpon>ManipulaGrupo.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManipulaProduto.cs">
+    <Compile Include="Forms\Estoque\Produtos\ManipulaProduto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManipulaProduto.Designer.cs">
+    <Compile Include="Forms\Estoque\Produtos\ManipulaProduto.Designer.cs">
       <DependentUpon>ManipulaProduto.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManipulaSubGrupo.cs">
+    <Compile Include="Forms\Estoque\Utilitarios\Sub-Grupo\ManipulaSubGrupo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManipulaSubGrupo.Designer.cs">
+    <Compile Include="Forms\Estoque\Utilitarios\Sub-Grupo\ManipulaSubGrupo.Designer.cs">
       <DependentUpon>ManipulaSubGrupo.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManipulaUnidade.cs">
+    <Compile Include="Forms\Estoque\Utilitarios\Unidade\ManipulaUnidade.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManipulaUnidade.Designer.cs">
+    <Compile Include="Forms\Estoque\Utilitarios\Unidade\ManipulaUnidade.Designer.cs">
       <DependentUpon>ManipulaUnidade.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManipulaUsuario.cs">
+    <Compile Include="Forms\Sistemas\Usuarios\ManipulaUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManipulaUsuario.Designer.cs">
+    <Compile Include="Forms\Sistemas\Usuarios\ManipulaUsuario.Designer.cs">
       <DependentUpon>ManipulaUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrincipal.cs">
+    <Compile Include="Forms\Menu\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipal.Designer.cs">
+    <Compile Include="Forms\Menu\MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pais.cs">
+    <Compile Include="Forms\Cadastro\Pais\Pais.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pais.Designer.cs">
+    <Compile Include="Forms\Cadastro\Pais\Pais.Designer.cs">
       <DependentUpon>Pais.cs</DependentUpon>
     </Compile>
-    <Compile Include="Produto.cs">
+    <Compile Include="Forms\Estoque\Produtos\Produto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Produto.Designer.cs">
+    <Compile Include="Forms\Estoque\Produtos\Produto.Designer.cs">
       <DependentUpon>Produto.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -251,82 +251,82 @@
     <Compile Include="Rel\RelacaoFornecedor.Designer.cs">
       <DependentUpon>RelacaoFornecedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="SubGrupo.cs">
+    <Compile Include="Forms\Estoque\Utilitarios\Sub-Grupo\SubGrupo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubGrupo.Designer.cs">
+    <Compile Include="Forms\Estoque\Utilitarios\Sub-Grupo\SubGrupo.Designer.cs">
       <DependentUpon>SubGrupo.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaLogin.cs">
+    <Compile Include="Forms\Login-Conexao\TelaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaLogin.Designer.cs">
+    <Compile Include="Forms\Login-Conexao\TelaLogin.Designer.cs">
       <DependentUpon>TelaLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Unidade.cs">
+    <Compile Include="Forms\Estoque\Utilitarios\Unidade\Unidade.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Unidade.Designer.cs">
+    <Compile Include="Forms\Estoque\Utilitarios\Unidade\Unidade.Designer.cs">
       <DependentUpon>Unidade.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usuarios.cs">
+    <Compile Include="Forms\Sistemas\Usuarios\Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Usuarios.Designer.cs">
+    <Compile Include="Forms\Sistemas\Usuarios\Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Cidades.resx">
+    <EmbeddedResource Include="Forms\Cadastro\Cidades\Cidades.resx">
       <DependentUpon>Cidades.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Clientes.resx">
+    <EmbeddedResource Include="Forms\Cadastro\Clientes\Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DadosConexao.resx">
+    <EmbeddedResource Include="Forms\Login-Conexao\DadosConexao.resx">
       <DependentUpon>DadosConexao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Estados.resx">
+    <EmbeddedResource Include="Forms\Cadastro\Estados\Estados.resx">
       <DependentUpon>Estados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Forms\Login-Conexao\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fornecedor.resx">
+    <EmbeddedResource Include="Forms\Cadastro\Fornecedor\Fornecedor.resx">
       <DependentUpon>Fornecedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Grupo.resx">
+    <EmbeddedResource Include="Forms\Estoque\Utilitarios\Grupo\Grupo.resx">
       <DependentUpon>Grupo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManipulaCidades.resx">
+    <EmbeddedResource Include="Forms\Cadastro\Cidades\ManipulaCidades.resx">
       <DependentUpon>ManipulaCidades.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManipulaCliente.resx">
+    <EmbeddedResource Include="Forms\Cadastro\Clientes\ManipulaCliente.resx">
       <DependentUpon>ManipulaCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManipulaFornecedor.resx">
+    <EmbeddedResource Include="Forms\Cadastro\Fornecedor\ManipulaFornecedor.resx">
       <DependentUpon>ManipulaFornecedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManipulaGrupo.resx">
+    <EmbeddedResource Include="Forms\Estoque\Utilitarios\Grupo\ManipulaGrupo.resx">
       <DependentUpon>ManipulaGrupo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManipulaProduto.resx">
+    <EmbeddedResource Include="Forms\Estoque\Produtos\ManipulaProduto.resx">
       <DependentUpon>ManipulaProduto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManipulaSubGrupo.resx">
+    <EmbeddedResource Include="Forms\Estoque\Utilitarios\Sub-Grupo\ManipulaSubGrupo.resx">
       <DependentUpon>ManipulaSubGrupo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManipulaUnidade.resx">
+    <EmbeddedResource Include="Forms\Estoque\Utilitarios\Unidade\ManipulaUnidade.resx">
       <DependentUpon>ManipulaUnidade.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManipulaUsuario.resx">
+    <EmbeddedResource Include="Forms\Sistemas\Usuarios\ManipulaUsuario.resx">
       <DependentUpon>ManipulaUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrincipal.resx">
+    <EmbeddedResource Include="Forms\Menu\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pais.resx">
+    <EmbeddedResource Include="Forms\Cadastro\Pais\Pais.resx">
       <DependentUpon>Pais.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Produto.resx">
+    <EmbeddedResource Include="Forms\Estoque\Produtos\Produto.resx">
       <DependentUpon>Produto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -346,16 +346,16 @@
     <EmbeddedResource Include="Rel\RelacaoFornecedor.resx">
       <DependentUpon>RelacaoFornecedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SubGrupo.resx">
+    <EmbeddedResource Include="Forms\Estoque\Utilitarios\Sub-Grupo\SubGrupo.resx">
       <DependentUpon>SubGrupo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaLogin.resx">
+    <EmbeddedResource Include="Forms\Login-Conexao\TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Unidade.resx">
+    <EmbeddedResource Include="Forms\Estoque\Utilitarios\Unidade\Unidade.resx">
       <DependentUpon>Unidade.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usuarios.resx">
+    <EmbeddedResource Include="Forms\Sistemas\Usuarios\Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSet1.xsc">
@@ -382,6 +382,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\Estoque\EntradaProdutos\" />
+    <Folder Include="Forms\Estoque\Movimentacao\" />
+    <Folder Include="Forms\Sistemas\Privilegios\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />
